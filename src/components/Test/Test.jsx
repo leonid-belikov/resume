@@ -5,8 +5,9 @@ import BoilCalc from "./BoilCalc/BoilCalc";
 const Test = () => {
     return (
         <div className={css.container}>
-            test
-            <BoilCalc/>
+            <div className={css.task}>
+                <BoilCalc/>
+            </div>
         </div>
     )
 };
