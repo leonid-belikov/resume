@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    height: 100px;
+    padding: 0 25px;
+}
+
+.avatar {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.userName {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.userState {
+    color: #444;
+}

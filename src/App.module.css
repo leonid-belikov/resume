@@ -1,0 +1,21 @@
+.container {
+    width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+        "h h"
+        "n c"
+        "f f";
+}
+
+.content {
+    grid-area: c;
+}
+
+.footer {
+    grid-area: f;
+    background-color: #bfa9d4;
+}
