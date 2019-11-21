@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+span {
+    color: #999;
+}
+
+input {
+    width: 100px;
+    margin-left: 5px;
+}

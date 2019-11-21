@@ -7,7 +7,7 @@ import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
 import Test from "./components/Test/Test";
 
-const App = (props) => {
+const App = () => {
 	return (
 		<BrowserRouter>
 			<div className={css.container}>
@@ -16,7 +16,7 @@ const App = (props) => {
 				<div className={css.content}>
 					<Switch>
 						<Route exact path="/" render={ () => <Redirect to="/profile"/> }/>
-						<Route path="/profile" render={ () => <Profile data={props.state.profilePage}/> }/>
+						<Route path="/profile" component={Profile}/>
 						<Route path="/dialogs" component={Dialogs}/>
 						<Route path="/test" component={Test}/>
 					</Switch>

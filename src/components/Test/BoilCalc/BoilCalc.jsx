@@ -1,13 +1,12 @@
 import React from "react";
-import css from "./BoilCalc.module.css";
-import DataInput from "./DataInput";
-import Verdict from "./Verdict";
+import DataInput from "../DataInput/DataInput";
+import Verdict from "../Verdict";
 
 class BoilCalc extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            temperature: ''
+            temperature: 25
         };
         this.changeHandler = this.changeHandler.bind(this);
     }
@@ -20,10 +19,11 @@ class BoilCalc extends React.Component {
 
     render() {
         return (
-            <div className={css.container}>
+            <div>
                 <DataInput
                     changeHandler={this.changeHandler}
-                    temperature={this.state.temperature}/>
+                    temperature={this.state.temperature}
+                    scale='c'/>
                 <Verdict temperature={this.state.temperature}/>
             </div>
         )

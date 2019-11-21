@@ -23,8 +23,11 @@ const state = {
 				text: 'Есть только один бог. И его имя Смерть. А Смерти мы говорим лишь одно: «Не сегодня».'
 			}
 		]
+	},
+	testPage: {
+		temperature: 37,
+		scale: 'c'
 	}
-
 };
 
 export default state;

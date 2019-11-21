@@ -6,7 +6,12 @@
 }
 
 .task {
-    background-color: #f4ff87;
+    background-color: #feffba;
     margin-bottom: 15px;
     padding: 10px;
+}
+
+.task h3 {
+    text-align: center;
+    margin-bottom: 5px;
 }
