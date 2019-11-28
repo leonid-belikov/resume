@@ -1,21 +1,25 @@
 import React from "react";
+import { connect } from 'react-redux';
 import css from "./Test.module.css";
-// import BoilCalc from "./BoilCalc/BoilCalc";
-import BoilMultiCalc from "./BoilMultiCalc/BoilMultiCalc";
+import SkillIcon from "./SkillIcon/SkillIcon";
 
-const Test = () => {
-    return (
-        <div className={css.container}>
-            {/*<div className={css.task}>*/}
-            {/*    <h3>Синхронизация поля ввода и абзаца с текстом</h3>*/}
-            {/*    <BoilCalc/>*/}
-            {/*</div>*/}
-            <div className={css.task}>
-                <h3>Синхронизация нескольких полей ввода и абзаца с текстом</h3>
-                <BoilMultiCalc/>
+class Test extends React.Component {
+    render() {
+
+        const skills = this.props.skills.map((skill, index) => <SkillIcon name={skill.name} img={skill.img} key={index}/>)
+
+        return (
+            <div className={css.container}>
+                <div className={css.task}>
+                    {skills}
+                </div>
             </div>
-        </div>
-    )
-};
+        )
+    }
+}
 
-export default Test;
+export default connect (
+    state => ({
+        skills: state.testPage.task_2
+    })
+)(Test);

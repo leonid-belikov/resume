@@ -11,17 +11,21 @@ function reducer(state = initialState, action) {
 	switch (action.type) {
 		case 'CHANGE_CELSIUS':
 			return Object.assign({}, state, {
-				testPage: {
-					temperature: action.temperature,
-					scale: 'c'
-				}
+				testPage: Object.assign({}, state.testPage, {
+					task_1: {
+						temperature: action.temperature,
+						scale: 'c'
+					},
+				})
 			});
 		case 'CHANGE_FAHRENHEIT':
 			return Object.assign({}, state, {
-				testPage: {
-					temperature: action.temperature,
-					scale: 'f'
-				}
+				testPage: Object.assign({}, state.testPage, {
+					task_1: {
+						temperature: action.temperature,
+						scale: 'f'
+					},
+				})
 			});
 		default: return state;
 	}

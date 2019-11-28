@@ -46,7 +46,7 @@ class DataInput extends React.Component {
 
 export default connect(
     state => ({
-        state: state.testPage
+        state: state.testPage.task_1
     }),
     dispatch => ({
         onChangeCelsius: (temperature) => {

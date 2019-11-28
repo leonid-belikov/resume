@@ -25,8 +25,32 @@ const state = {
 		]
 	},
 	testPage: {
-		temperature: 37,
-		scale: 'c'
+		task_1: {
+			temperature: 37,
+			scale: 'c'
+		},
+		task_2: [
+			{
+				name: 'html',
+				img: 'https://pngicon.ru/file/uploads/html5.png'
+			},
+			{
+				name: 'css',
+				img: 'https://pngicon.ru/file/uploads/css3.png'
+			},
+			{
+				name: 'js',
+				img: 'https://img.icons8.com/color/96/000000/javascript.png'
+			},
+			{
+				name: 'react',
+				img: 'https://img.icons8.com/color/96/000000/react-native.png'
+			},
+			{
+				name: 'redux',
+				img: 'http://ielkanyuk.ru/img/skills/redux.png'
+			},
+		]
 	}
 };
 

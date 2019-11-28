@@ -1,0 +1,68 @@
+.skillIcon-enter {
+    filter: none;
+}
+
+.skillIcon-enter-done {
+    filter: drop-shadow(0 5px 5px #000);
+    transition: 2s;
+}
+
+/*длина окружности - 377px*/
+
+.html-enter {
+    stroke-dasharray: 0 450;
+    stroke-width: 1px;
+}
+
+.html-enter-done {
+    stroke-dasharray: 325 450;
+    transition: 1724ms linear;
+}
+
+.css-enter {
+    stroke-dasharray: 0 450;
+    stroke-width: 1px;
+}
+
+.css-enter-done {
+    stroke-dasharray: 302 450;
+    transition: 1600ms linear;
+}
+
+img.html-icon, img.css-icon {
+    transform: translate(-50%, -44%);
+}
+
+.js-enter {
+    stroke-dasharray: 0 450;
+    stroke-width: 1px;
+}
+
+.js-enter-done {
+    stroke-dasharray: 285 450;
+    transition: 1512ms linear;
+}
+
+.react-enter {
+    stroke-dasharray: 0 450;
+    stroke-width: 1px;
+}
+
+.react-enter-done {
+    stroke-dasharray: 285 450;
+    transition: 1512ms linear;
+}
+
+.redux-enter {
+    stroke-dasharray: 0 450;
+    stroke-width: 1px;
+}
+
+.redux-enter-done {
+    stroke-dasharray: 285 450;
+    transition: 1512ms linear;
+}
+
+img.redux-icon {
+    transform: translate(-50%, -54%);
+}
