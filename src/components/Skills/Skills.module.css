@@ -1,0 +1,32 @@
+.container {
+    padding: 25px;
+}
+
+.find {
+    width: fit-content;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.findInput {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    background: rgba(34, 35, 62, 0.1);
+}
+.findInput:focus {
+    background: #f0f0ff;
+}
+
+.img {
+    position: absolute;
+    width: 25px;
+    right: 9px;
+    bottom: 6px;}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}

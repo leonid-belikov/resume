@@ -9,22 +9,13 @@ import initialState from './state.js';
 
 function reducer(state = initialState, action) {
 	switch (action.type) {
-		case 'CHANGE_CELSIUS':
+		case 'CHANGE_BACKTITLE':
+			const newSearchValue = action.payload;
+			const newBackTitleValue = action.payload || 'skills';
 			return Object.assign({}, state, {
-				testPage: Object.assign({}, state.testPage, {
-					task_1: {
-						temperature: action.temperature,
-						scale: 'c'
-					},
-				})
-			});
-		case 'CHANGE_FAHRENHEIT':
-			return Object.assign({}, state, {
-				testPage: Object.assign({}, state.testPage, {
-					task_1: {
-						temperature: action.temperature,
-						scale: 'f'
-					},
+				skillsPage: Object.assign({}, state.skillsPage, {
+					backTitle: newBackTitleValue,
+					searchRequest: newSearchValue
 				})
 			});
 		default: return state;

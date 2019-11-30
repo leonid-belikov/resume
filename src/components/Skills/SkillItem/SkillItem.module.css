@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    padding: 15px 30px;
+}
+
+.icon {
+    width: 130px;
+    height: 130px;
+    position: relative;
+}
+
+.svg {
+    height: 100%;
+    width: 100%;
+    transform: rotateY(180deg) rotateZ(-90deg);
+}
+
+.circle {
+    stroke: #b7b7b7;
+    fill-opacity: 0;
+}
+
+.img {
+    position: absolute;
+    left: 65px;
+    top: 65px;
+    height: 80px;
+    width: 80px;
+    transform: translate(-50%, -50%);
+}
+
+.description {
+    max-width: 740px;
+    color: #f0f0ff;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.title:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 60px;
+    background-color: #f0f0ff;
+    margin: 10px 0 15px 0;
+}
+
+.text {
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: lighter;
+}

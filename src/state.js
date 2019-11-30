@@ -24,33 +24,36 @@ const state = {
 			}
 		]
 	},
-	testPage: {
-		task_1: {
-			temperature: 37,
-			scale: 'c'
-		},
-		task_2: [
+	skillsPage: {
+		skills: [
 			{
 				name: 'html',
-				img: 'https://pngicon.ru/file/uploads/html5.png'
+				img: 'https://pngicon.ru/file/uploads/html5.png',
+				descriptionText: 'Lorem html ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 			},
 			{
 				name: 'css',
-				img: 'https://pngicon.ru/file/uploads/css3.png'
+				img: 'https://pngicon.ru/file/uploads/css3.png',
+				descriptionText: 'Lorem css ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 			},
 			{
 				name: 'js',
-				img: 'https://img.icons8.com/color/96/000000/javascript.png'
+				img: 'https://img.icons8.com/color/96/000000/javascript.png',
+				descriptionText: 'Lorem js ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 			},
 			{
 				name: 'react',
-				img: 'https://img.icons8.com/color/96/000000/react-native.png'
+				img: 'https://img.icons8.com/color/96/000000/react-native.png',
+				descriptionText: 'Lorem react ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 			},
 			{
 				name: 'redux',
-				img: 'http://ielkanyuk.ru/img/skills/redux.png'
+				img: 'http://ielkanyuk.ru/img/skills/redux.png',
+				descriptionText: 'Lorem redux ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 			},
-		]
+		],
+		backTitle: 'skills',
+		searchRequest: ''
 	}
 };
 
