@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import css from "./App.module.css";
 import Header from "./components/Header/Header";
-import Navbar from "./components/Navbar/Navbar";
+// import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
 import Skills from "./components/Skills/Skills";
@@ -16,7 +16,7 @@ class App extends React.Component {
 			<BrowserRouter>
 				<div className={css.container}>
 					<Header/>
-					<Navbar/>
+					{/*<Navbar/>*/}
 					<div className={css.backTitle}>{this.props.backTitle}</div>
 					<div className={css.content}>
 						<Switch>
