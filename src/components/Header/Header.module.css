@@ -9,6 +9,8 @@
 
 .nav {
     display: flex;
+    width: 220px;
+    justify-content: space-between;
 }
 
 .item {

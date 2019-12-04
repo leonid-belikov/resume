@@ -5,6 +5,10 @@ import SkillItem from "./SkillItem/SkillItem";
 
 class Skills extends React.Component {
 
+    componentDidMount() {
+        this.props.updateBackTitle('skills');
+    }
+
     onInputChange(e) {
         const value = e.target.value;
         this.props.inputChanged(value);
@@ -12,8 +16,32 @@ class Skills extends React.Component {
 
     render() {
 
-        const skills = this.props.skills.filter((skill) => {
-            return skill.name.includes(this.props.searchRequest);
+        const frontendSkills = this.props.skills.filter((skill) => {
+            return skill.name.includes(this.props.searchRequest) && skill.category === 'frontend';
+        }).map((skill) => {
+            return (
+                <SkillItem
+                    name={skill.name}
+                    img={skill.img}
+                    descriptionText={skill.descriptionText}
+                    key={skill.name}/>
+            )
+        });
+
+        const commandSkills = this.props.skills.filter((skill) => {
+            return skill.name.includes(this.props.searchRequest) && skill.category === 'command';
+        }).map((skill) => {
+            return (
+                <SkillItem
+                    name={skill.name}
+                    img={skill.img}
+                    descriptionText={skill.descriptionText}
+                    key={skill.name}/>
+            )
+        });
+
+        const otherSkills = this.props.skills.filter((skill) => {
+            return skill.name.includes(this.props.searchRequest) && skill.category === 'other';
         }).map((skill) => {
             return (
                 <SkillItem
@@ -37,7 +65,18 @@ class Skills extends React.Component {
                     <img className={css.img} src="https://img.icons8.com/ios-filled/50/000000/search.png" alt=""/>
                 </div>
                 <div className={css.skills}>
-                    {skills}
+                    {frontendSkills.length > 0 &&
+                        <div className={css.title}>Frontend</div>
+                    }
+                    {frontendSkills}
+                    {commandSkills.length > 0 &&
+                        <div className={css.title}>Командная разработка</div>
+                    }
+                    {commandSkills}
+                    {otherSkills.length > 0 &&
+                        <div className={css.title}>Смежные области</div>
+                    }
+                    {otherSkills}
                 </div>
             </div>
         )
@@ -51,7 +90,10 @@ export default connect (
     }),
     dispatch => ({
         inputChanged: (value) => {
-            dispatch({type: 'CHANGE_BACKTITLE', payload: value})
+            dispatch({type: 'CHANGE_BACKTITLE', payload: value, fromSearch: true})
+        },
+        updateBackTitle: (value) => {
+            dispatch({type: 'CHANGE_BACKTITLE', payload: value, fromSearch: false})
         }
     })
 )(Skills);

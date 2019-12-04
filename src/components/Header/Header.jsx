@@ -9,8 +9,7 @@ const Header = () => {
 			<Clock/>
 			<div className={css.nav}>
                 <NavLink className={css.item} activeClassName={css.active} to="/profile">Профиль</NavLink>
-                <NavLink className={css.item} activeClassName={css.active} to="/dialogs">Сообщения</NavLink>
-                <NavLink className={css.item} activeClassName={css.active} to="/test">Тесты</NavLink>
+                <NavLink className={css.item} activeClassName={css.active} to="/skills">Навыки</NavLink>
             </div>
 		</div>
     )

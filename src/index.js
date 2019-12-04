@@ -10,13 +10,19 @@ import initialState from './state.js';
 function reducer(state = initialState, action) {
 	switch (action.type) {
 		case 'CHANGE_BACKTITLE':
-			const newSearchValue = action.payload;
+			let searchUpdate = {};
+			if (action.fromSearch) {
+				const newSearchValue = action.payload;
+				searchUpdate = {
+					skillsPage: Object.assign({}, state.skillsPage, {
+						searchRequest: newSearchValue
+					})
+				}
+			}
+
 			const newBackTitleValue = action.payload || 'skills';
-			return Object.assign({}, state, {
-				skillsPage: Object.assign({}, state.skillsPage, {
-					backTitle: newBackTitleValue,
-					searchRequest: newSearchValue
-				})
+			return Object.assign({}, state, searchUpdate, {
+					backTitle: newBackTitleValue
 			});
 		default: return state;
 	}

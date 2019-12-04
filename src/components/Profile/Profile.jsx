@@ -6,6 +6,10 @@ import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import Posts from "./Posts/Posts";
 
 class Profile extends React.Component {
+	componentDidMount() {
+		this.props.updateBackTitle('profile');
+	}
+
 	render() {
 		return (
 			<div className={css.container}>
@@ -20,5 +24,9 @@ export default connect(
 	state => ({
 		data: state.profilePage
 	}),
-	dispatch => ({})
+	dispatch => ({
+        updateBackTitle: (value) => {
+            dispatch({type: 'CHANGE_BACKTITLE', payload: value, fromSearch: false})
+        }
+	})
 )(Profile);
