@@ -1,0 +1,17 @@
+.container {
+    position: relative;
+    grid-area: a;
+}
+
+.avatar {
+
+}
+
+.border {
+    position: absolute;
+    border: 6px solid #90a1ff;
+    height: 426px;
+    width: 366px;
+    top: 20px;
+    right: 10px;
+}

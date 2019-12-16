@@ -4,17 +4,12 @@
     width: 1200px;
     height: 100vh;
     margin: 0 auto;
-    display: grid;
-    grid-template-rows: 60px 1fr;
-    grid-template-columns: 200px 1fr;
-    grid-template-areas:
-        "h h"
-        "n c";
+    display: flex;
+    flex-direction: column;
 }
 
 .content {
-    grid-area: c;
-    overflow: auto;
+    height: 100%;
 }
 
 .content::-webkit-scrollbar {
@@ -36,6 +31,6 @@
     right: -3px;
     font-weight: 700;
     letter-spacing: -25px;
-    color: #2f304b;
+    color: #3755cc;
     z-index: -1;
 }
