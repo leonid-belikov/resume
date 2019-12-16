@@ -54,29 +54,34 @@ class Skills extends React.Component {
 
         return (
             <div className={css.container}>
-                <div className={css.find}>
-                    <input
-                        type="text"
-                        value={this.props.searchRequest}
-                        onChange={this.onInputChange.bind(this)}
-                        className={css.findInput}
-                        placeholder="Введите название технологии..."
-                    />
-                    <img className={css.img} src="https://img.icons8.com/ios-filled/50/000000/search.png" alt=""/>
-                </div>
-                <div className={css.skills}>
-                    {frontendSkills.length > 0 &&
-                        <div className={css.title}>Frontend</div>
-                    }
-                    {frontendSkills}
-                    {commandSkills.length > 0 &&
-                        <div className={css.title}>Командная разработка</div>
-                    }
-                    {commandSkills}
-                    {otherSkills.length > 0 &&
-                        <div className={css.title}>Смежные области</div>
-                    }
-                    {otherSkills}
+                <div className={css.sideInfo}>sideInfo</div>
+                <div className={css.skillsInfo}>
+                    <div className={css.findWrap}>
+                        <div className={css.find}>
+                            <input
+                                type="text"
+                                value={this.props.searchRequest}
+                                onChange={this.onInputChange.bind(this)}
+                                className={css.findInput}
+                                placeholder="Введите название технологии..."
+                            />
+                            <img className={css.img} src="https://img.icons8.com/ios-filled/50/000000/search.png" alt=""/>
+                        </div>
+                    </div>
+                    <div className={css.skills}>
+                        {frontendSkills.length > 0 &&
+                            <div className={css.title}>Frontend</div>
+                        }
+                        {frontendSkills}
+                        {commandSkills.length > 0 &&
+                            <div className={css.title}>Командная разработка</div>
+                        }
+                        {commandSkills}
+                        {otherSkills.length > 0 &&
+                            <div className={css.title}>Смежные области</div>
+                        }
+                        {otherSkills}
+                    </div>
                 </div>
             </div>
         )
@@ -85,7 +90,7 @@ class Skills extends React.Component {
 
 export default connect (
     state => ({
-        skills: state.skillsPage.skills,
+        skills: state.skills,
         searchRequest: state.skillsPage.searchRequest
     }),
     dispatch => ({

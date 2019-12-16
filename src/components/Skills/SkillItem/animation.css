@@ -3,7 +3,7 @@
 }
 
 .skillIcon-enter-done {
-    filter: drop-shadow(0 5px 5px #000);
+    /*filter: drop-shadow(0 5px 5px #fff);*/
     transition: 2s;
 }
 
@@ -65,4 +65,34 @@ img.html-icon, img.css-icon {
 
 img.redux-icon {
     transform: translate(-50%, -54%);
+}
+
+.git-enter {
+    stroke-dasharray: 0 450;
+    stroke-width: 1px;
+}
+
+.git-enter-done {
+    stroke-dasharray: 285 450;
+    transition: 1512ms linear;
+}
+
+.python-enter {
+    stroke-dasharray: 0 450;
+    stroke-width: 1px;
+}
+
+.python-enter-done {
+    stroke-dasharray: 285 450;
+    transition: 1512ms linear;
+}
+
+.postgresql-enter {
+    stroke-dasharray: 0 450;
+    stroke-width: 1px;
+}
+
+.postgresql-enter-done {
+    stroke-dasharray: 285 450;
+    transition: 1512ms linear;
 }

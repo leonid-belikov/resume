@@ -1,25 +1,68 @@
 .header {
-    grid-area: h;
-    background-color: burlywood;
+    height: 58px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 14px;
+    position: absolute;
+    z-index: 10;
+    border-radius: 60px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes showNav{
+  0%  { transform: rotateZ(90deg); width: 5px; }
+  20%  { transform: rotateZ(0deg); width: 10px; }
+  100%  { transform: rotateZ(0deg); width: 480px; }
 }
 
 .nav {
     display: flex;
-    width: 220px;
+    width: 5px;
     justify-content: space-between;
+    border-left: 4px solid #90a1ff;
+    border-right: 4px solid #90a1ff;
+    padding: 0 10px;
+    overflow: hidden;
+    height: 32px;
+    transition: 1.5s;
+    transform: rotateZ(90deg);
+    background: rgba(181, 188, 255, 0.7);
+    color: #f0f0ff;
+}
+
+.nav:hover {
+    animation: showNav 0.7s ease-out 0s 1 alternate both;
+}
+
+.nav:after {
+    content: '';
+    display: block;
+    background-color: #3755cc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 30px;
+    transform: translate(-2px, -50%);
+}
+
+.nav:hover:after {
+    top: -20px;
 }
 
 .item {
     text-decoration: none;
-    color: #000;
+    color: inherit;
+    margin: 0 10px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
 }
 
 .item:visited {
-    color: #000;
+    color: inherit;
 }
 
 .item:hover {
@@ -27,5 +70,9 @@
 }
 
 .active {
-    background-color: #a6d0f8;
+    border-bottom: 1px solid;
+}
+
+.active:hover {
+    color: #f0f0ff;
 }

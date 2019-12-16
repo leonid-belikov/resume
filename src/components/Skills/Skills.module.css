@@ -1,5 +1,35 @@
 .container {
-    padding: 25px;
+    display: flex;
+    height: 100%;
+}
+
+.sideInfo {
+    width: 320px;
+    background-color: rgba(55, 97, 255, 0.2);
+}
+
+.skillsInfo {
+    flex-grow: 1;
+    padding: 50px 25px 25px 25px;
+    overflow: auto;
+}
+
+.skillsInfo::-webkit-scrollbar {
+    width: 0px;
+}
+
+.skillsInfo:hover::-webkit-scrollbar {
+    width: 14px;
+}
+
+.skillsInfo::-webkit-scrollbar-thumb {
+    border-right: 3px solid #6f718c;
+}
+
+.findWrap {
+    display: flex;
+    justify-content: flex-end;
+    width: 800px;
 }
 
 .find {
@@ -13,8 +43,8 @@
     outline: none;
     padding: 10px;
     border-radius: 10px;
-    width: 300px;
-    background: rgba(34, 35, 62, 0.1);
+    width: 270px;
+    background: rgba(71, 108, 255, 0.1);
 }
 .findInput:focus {
     background: #f0f0ff;
@@ -32,10 +62,9 @@
 }
 
 .title {
-    text-align: center;
-    color: #9b9db7;
-    max-width: 840px;
-    padding: 0 30px;
-    border-bottom: 1px solid #9b9db7;
-    margin: 15px 0 20px 60px;
+    text-align: left;
+    color: #434e79;
+    max-width: 480px;
+    border-bottom: 1px solid #434e79;
+    margin: 15px 0 25px 35px;
 }

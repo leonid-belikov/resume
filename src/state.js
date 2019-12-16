@@ -25,58 +25,58 @@ const state = {
 		]
 	},
 	skillsPage: {
-		skills: [
-			{
-				name: 'html',
-				category: 'frontend',
-				img: 'https://pngicon.ru/file/uploads/html5.png',
-				descriptionText: 'Lorem html ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
-			},
-			{
-				name: 'css',
-				category: 'frontend',
-				img: 'https://pngicon.ru/file/uploads/css3.png',
-				descriptionText: 'Lorem css ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
-			},
-			{
-				name: 'js',
-				category: 'frontend',
-				img: 'https://img.icons8.com/color/96/000000/javascript.png',
-				descriptionText: 'Lorem js ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
-			},
-			{
-				name: 'react',
-				category: 'frontend',
-				img: 'https://img.icons8.com/color/96/000000/react-native.png',
-				descriptionText: 'Lorem react ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
-			},
-			{
-				name: 'redux',
-				category: 'frontend',
-				img: 'http://ielkanyuk.ru/img/skills/redux.png',
-				descriptionText: 'Lorem redux ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
-			},
-			{
-				name: 'git',
-				category: 'command',
-				img: 'https://img.icons8.com/color/96/000000/git.png',
-				descriptionText: 'Lorem git ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
-			},
-			{
-				name: 'phyton',
-				category: 'other',
-				img: 'https://img.icons8.com/color/96/000000/python.png',
-				descriptionText: 'Lorem phyton ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
-			},
-			{
-				name: 'PostgreSQL',
-				category: 'other',
-				img: 'https://img.icons8.com/color/96/000000/postgreesql.png',
-				descriptionText: 'Lorem PostgreSQL ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
-			},
-		],
 		searchRequest: ''
 	},
+	skills: [
+		{
+			name: 'html',
+			category: 'frontend',
+			img: 'https://pngicon.ru/file/uploads/html5.png',
+			descriptionText: 'Lorem html ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+		},
+		{
+			name: 'css',
+			category: 'frontend',
+			img: 'https://pngicon.ru/file/uploads/css3.png',
+			descriptionText: 'Lorem css ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+		},
+		{
+			name: 'js',
+			category: 'frontend',
+			img: 'https://img.icons8.com/color/96/000000/javascript.png',
+			descriptionText: 'Lorem js ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+		},
+		{
+			name: 'react',
+			category: 'frontend',
+			img: 'https://img.icons8.com/color/96/000000/react-native.png',
+			descriptionText: 'Lorem react ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+		},
+		{
+			name: 'redux',
+			category: 'frontend',
+			img: 'http://ielkanyuk.ru/img/skills/redux.png',
+			descriptionText: 'Lorem redux ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+		},
+		{
+			name: 'git',
+			category: 'command',
+			img: 'https://img.icons8.com/color/96/000000/git.png',
+			descriptionText: 'Lorem git ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+		},
+		{
+			name: 'python',
+			category: 'other',
+			img: 'https://img.icons8.com/color/96/000000/python.png',
+			descriptionText: 'Lorem phyton ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+		},
+		{
+			name: 'postgresql',
+			category: 'other',
+			img: 'https://img.icons8.com/color/96/000000/postgreesql.png',
+			descriptionText: 'Lorem PostgreSQL ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+		},
+	],
 	backTitle: ''
 };
 
