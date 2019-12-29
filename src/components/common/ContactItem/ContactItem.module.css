@@ -1,0 +1,51 @@
+.container {
+    width: fit-content;
+    transition: 300ms;
+    position: absolute;
+}
+
+.container .img img {
+    transform: scale(0.5);
+}
+
+.gh {
+    top: -610px;
+    left: -510px;
+    transform: scale(0.15);
+    z-index: 10;
+}
+
+.hh {
+    top: -450px;
+    left: -440px;
+    transform: scale(0.15);
+    z-index: 2;
+}
+
+.email {
+    top: -270px;
+    left: 170px;
+    transform: scale(0.4);
+    z-index: 5;
+}
+
+.tg {
+    top: -500px;
+    left: -510px;
+    transform: scale(0.3);
+    z-index: -1;
+}
+
+.ig {
+    top: -200px;
+    left: 70px;
+    transform: scale(1);
+    z-index: -2;
+}
+
+.vk {
+    top: 0px;
+    left: 200px;
+    transform: scale(1);
+    z-index: 2;
+}

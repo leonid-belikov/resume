@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 
 import css from './Profile.module.css';
 import Avatar from '../common/Avatar/Avatar';
-import MainSkill from './MainSkill/MainSkill';
+import MainSkill from '../common/MainSkill/MainSkill';
+import ContactItem from '../common/ContactItem/ContactItem';
 // import tagline from '../../tagline.svg';
 // import sign from '../../sign_gray.svg';
 
@@ -23,20 +24,29 @@ class Profile extends React.Component {
 			)
 		});
 
+		const contacts = this.props.contacts.map((item) => {
+			return (
+				<ContactItem
+					img={item.img}
+					name={item.name}
+					link={item.link}
+					key={item.name}/>
+			)
+		});
+
 		return (
 			<div className={css.container}>
 				<Avatar width="420"/>
 				<div className={css.specialty}>Frontend web-разработчик</div>
 				<div className={css.nameWrap}><div className={css.name}>Леонид Беликов</div></div>
-				<div className={css.mainSkills}>
-					<div className={css.mainSkillsWrap}>
+				<div className={css.mainSkillsWrap}>
+					<div className={css.mainSkills}>
 						{mainSkills}
 					</div>
 				</div>
-				{/*<img className={css.tagline} src={tagline} alt=''></img>*/}
-				{/*<img className={css.sign} src={sign} alt=''></img>*/}
-				{/*<div className={css.backTagline}>"Фронтенд - моя страсть!"</div>*/}
-				<div className={css.contacts}>Контакты</div>
+				<div className={css.contacts}>
+					{contacts}
+				</div>
 			</div>
 		)
 	}
@@ -44,8 +54,9 @@ class Profile extends React.Component {
 
 export default connect(
 	state => ({
-		data: state.profilePage,
-		skills: state.skills
+		data: state.profilePage
+		, skills: state.skills
+		, contacts: state.contacts
 	}),
 	dispatch => ({
         updateBackTitle: (value) => {

@@ -77,6 +77,38 @@ const state = {
 			descriptionText: 'Lorem PostgreSQL ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 	],
+	contacts: [
+		{
+			name: 'gh',
+			img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png',
+			link: ''
+		},
+		{
+			name: 'hh',
+			img: 'https://upload.wikimedia.org/wikipedia/commons/7/79/HeadHunter_logo.png',
+			link: ''
+		},
+		{
+			name: 'email',
+			img: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png',
+			link: ''
+		},
+		{
+			name: 'tg',
+			img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1200px-Telegram_2019_Logo.svg.png',
+			link: ''
+		},
+		{
+			name: 'ig',
+			img: 'https://pngicon.ru/file/uploads/instagram.png',
+			link: ''
+		},
+		{
+			name: 'vk',
+			img: 'https://pngicon.ru/file/uploads/vk-256x256.png',
+			link: ''
+		},
+	],
 	backTitle: ''
 };
 
