@@ -1,6 +1,7 @@
 .container {
     position: relative;
     grid-area: a;
+    z-index: 3;
 }
 
 .avatar {

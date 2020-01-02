@@ -81,32 +81,86 @@ const state = {
 		{
 			name: 'gh',
 			img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png',
-			link: ''
+			link: 'https://github.com/leonidleonid',
+			style: {
+				width: 180,
+				height: 180,
+				top: -90,
+				left: 10,
+			},
+			initTop: -90,
+			initLeft: 10,
+			deltaMove: 35,
 		},
 		{
 			name: 'hh',
 			img: 'https://upload.wikimedia.org/wikipedia/commons/7/79/HeadHunter_logo.png',
-			link: ''
+			link: 'https://spb.hh.ru/resume/8ceb9cadff059e689b0039ed1f5764364d3338',
+			style: {
+				width: 120,
+				height: 120,
+				top: -100,
+				left: -90,
+			},
+			initTop: -100,
+			initLeft: -90,
+			deltaMove: 22,
 		},
 		{
 			name: 'email',
 			img: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png',
-			link: ''
+			link: 'mailto:lifeisgym@gmail.com?subject=Работа, frontend-разработчик',
+			style: {
+				width: 204,
+				height: 204,
+				top: -160,
+				left: 300,
+			},
+			initTop: -160,
+			initLeft: 300,
+			deltaMove: 18,
 		},
 		{
 			name: 'tg',
 			img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1200px-Telegram_2019_Logo.svg.png',
-			link: ''
+			link: 'https://t.me/belikov_LL',
+			style: {
+				width: 360,
+				height: 360,
+				top: -70,
+				left: -100,
+			},
+			initTop: -70,
+			initLeft: -100,
+			deltaMove: 12,
 		},
 		{
 			name: 'ig',
 			img: 'https://pngicon.ru/file/uploads/instagram.png',
-			link: ''
+			link: '',
+			style: {
+				width: 512,
+				height: 512,
+				top: -200,
+				left: 65,
+			},
+			initTop: -200,
+			initLeft: 65,
+			deltaMove: 4,
 		},
 		{
 			name: 'vk',
 			img: 'https://pngicon.ru/file/uploads/vk-256x256.png',
-			link: ''
+			link: 'https://vk.com/id130355',
+			style: {
+				width: 256,
+				height: 256,
+				top: 0,
+				left: 200,
+			},
+			initTop: 0,
+			initLeft: 200,
+			deltaMove: 8,
 		},
 	],
 	backTitle: ''
