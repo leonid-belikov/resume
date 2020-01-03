@@ -10,9 +10,9 @@
 
 .border {
     position: absolute;
-    border: 3px solid #90a1ff;
-    height: 492px;
-    width: 415px;
+    border: 6px solid #90a1ff;
+    height: 426px;
+    width: 366px;
     top: 20px;
-    left: 40px;
+    right: 10px;
 }
