@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from 'react-redux';
 import css from "./Skills.module.css";
 import SkillItem from "./SkillItem/SkillItem";
+import SideInfo from "../common/SideInfo/SideInfo";
 
 class Skills extends React.Component {
 
@@ -54,7 +55,9 @@ class Skills extends React.Component {
 
         return (
             <div className={css.container}>
-                <div className={css.sideInfo}>sideInfo</div>
+                <div className={css.sideInfo}>
+                    <SideInfo/>
+                </div>
                 <div className={css.skillsInfo}>
                     <div className={css.findWrap}>
                         <div className={css.find}>

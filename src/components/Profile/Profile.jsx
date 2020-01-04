@@ -5,8 +5,6 @@ import css from './Profile.module.css';
 import Avatar from '../common/Avatar/Avatar';
 import MainSkill from '../common/MainSkill/MainSkill';
 import ContactItem from '../common/ContactItem/ContactItem';
-// import tagline from '../../tagline.svg';
-// import sign from '../../sign_gray.svg';
 
 class Profile extends React.Component {
 	componentDidMount() {
@@ -46,7 +44,10 @@ class Profile extends React.Component {
 
 		return (
 			<div onMouseMove={this.onMouseMoveHandler.bind(this)} className={css.container}>
-				<Avatar width="420"/>
+				<Avatar
+					width="420"
+					borderVisible={true}
+				/>
 				<div className={css.specialty}>Frontend web-разработчик</div>
 				<div className={css.nameWrap}><div className={css.name}>Леонид Беликов</div></div>
 				<div className={css.mainSkillsWrap}>

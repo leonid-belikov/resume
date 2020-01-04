@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.nameWrap {
+    color: #2f304b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+.name {
+    letter-spacing: -2px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #2f304b;
+}
+
+.avatarWrap {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.avatar {
+
+}
+.avatar .border {
+    display: none;
+}
+
+.skillsWrap {
+
+}
+.skills {
+    display: flex;
+    padding: 10px;
+    justify-content: flex-start;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 320px;
+    box-shadow: 0px -11px 8px 0px rgba(255, 255, 255, 0.5);
+    margin-bottom: 4px;
+}
+
+.contactsWrap {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts {
+    height: 240px;
+    position: relative;
+    width: 320px;
+    border-right: 1px solid #2f304b;
+}

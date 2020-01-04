@@ -1,25 +1,48 @@
 .container {
 }
+img.small {
+    filter: drop-shadow(2px 4px 6px black);
+}
 .html {
     width: 60px;
     height: 60px;
     margin: 5px;
+}
+.html.small {
+    width: 30px;
+    height: 30px;
 }
 .css {
     width: 60px;
     height: 60px;
     margin: 5px;
 }
+.css.small {
+    width: 30px;
+    height: 30px;
+}
 .js {
     width: 70px;
     height: 70px;
+}
+.js.small {
+    width: 40px;
+    height: 40px;
 }
 .react {
     width: 70px;
     height: 70px;
 }
+.react.small {
+    width: 40px;
+    height: 40px;
+}
 .redux {
     width: 60px;
     height: 60px;
     margin: 5px;
+}
+.redux.small {
+    width: 30px;
+    height: 30px;
 }
