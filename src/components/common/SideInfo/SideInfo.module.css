@@ -9,11 +9,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px 0;
+    padding: 35px 0;
 }
 .name {
     letter-spacing: -2px;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 700;
     text-align: center;
     color: #2f304b;
@@ -23,7 +23,6 @@
     display: flex;
     justify-content: center;
     position: relative;
-    overflow: hidden;
 }
 .avatar {
 
@@ -41,10 +40,8 @@
     justify-content: flex-start;
     position: absolute;
     z-index: 10;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.5);
+    top: -30px;
     width: 320px;
-    box-shadow: 0px -11px 8px 0px rgba(255, 255, 255, 0.5);
     margin-bottom: 4px;
 }
 

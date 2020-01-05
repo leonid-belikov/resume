@@ -5,24 +5,23 @@
 
 .sideInfo {
     width: 320px;
-    /*background-color: rgba(55, 97, 255, 0.2);*/
 }
 
-.skillsInfo {
+.mainInfo {
     flex-grow: 1;
     padding: 50px 25px 25px 25px;
     overflow: auto;
 }
 
-.skillsInfo::-webkit-scrollbar {
+.mainInfo::-webkit-scrollbar {
     width: 0px;
 }
 
-.skillsInfo:hover::-webkit-scrollbar {
+.mainInfo:hover::-webkit-scrollbar {
     width: 14px;
 }
 
-.skillsInfo::-webkit-scrollbar-thumb {
+.mainInfo::-webkit-scrollbar-thumb {
     border-right: 3px solid #6f718c;
 }
 

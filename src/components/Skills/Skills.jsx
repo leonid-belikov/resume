@@ -58,7 +58,7 @@ class Skills extends React.Component {
                 <div className={css.sideInfo}>
                     <SideInfo/>
                 </div>
-                <div className={css.skillsInfo}>
+                <div className={css.mainInfo}>
                     <div className={css.findWrap}>
                         <div className={css.find}>
                             <input

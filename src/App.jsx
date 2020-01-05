@@ -6,6 +6,8 @@ import css from "./App.module.css";
 import Header from "./components/Header/Header";
 import Profile from "./components/Profile/Profile";
 import Skills from "./components/Skills/Skills";
+import Experience from "./components/Experience/Experience";
+import Portfolio from "./components/Portfolio/Portfolio";
 
 class App extends React.Component {
 	render() {
@@ -20,6 +22,8 @@ class App extends React.Component {
 							<Route exact path="/" render={() => <Redirect to="/profile"/>}/>
 							<Route path="/profile" component={Profile}/>
 							<Route path="/skills" component={Skills}/>
+							<Route path="/experience" component={Experience}/>
+							<Route path="/portfolio" component={Portfolio}/>
 						</Switch>
 					</div>
 				</div>

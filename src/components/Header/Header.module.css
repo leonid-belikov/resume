@@ -2,11 +2,10 @@
     height: 58px;
     display: flex;
     align-items: center;
-    padding: 14px;
     position: absolute;
     z-index: 10;
     border-radius: 60px;
-    top: 20px;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
 }
