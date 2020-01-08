@@ -42,6 +42,12 @@ function reducer(state = initialState, action) {
 			}
 			return Object.assign({}, state, {contacts});
 
+		case 'CHANGE_YEAR':
+			const year = action.payload;
+			const expPage = Object.assign({}, state.expPage);
+			expPage.selectedYear = year;
+			return Object.assign({}, state, {expPage});
+
 		default: return state;
 	}
 }

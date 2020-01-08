@@ -25,7 +25,7 @@ class SkillItem extends React.Component {
                         timeout={0}
                         in={this.state.in}
                         classNames="skillIcon">
-                        <img src={this.props.img} alt={this.props.name} className={`${this.props.name}-icon ${css.img}`}/>
+                        <img src={this.props.img} alt={this.props.name} className={`${css[this.props.name + '-icon']} ${css.img}`}/>
                     </CSSTransition>
                     <svg viewBox="0 0 130 130" className={css.svg}>
                         <CSSTransition

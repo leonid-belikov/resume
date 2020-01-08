@@ -1,6 +1,5 @@
 .container {
     position: relative;
-    /*background: linear-gradient(0deg, #313358, #737590);*/
     width: 1200px;
     height: 100vh;
     margin: 0 auto;
@@ -10,18 +9,6 @@
 
 .content {
     height: 100%;
-}
-
-.content::-webkit-scrollbar {
-    width: 0px;
-}
-
-.content:hover::-webkit-scrollbar {
-    width: 14px;
-}
-
-.content::-webkit-scrollbar-thumb {
-    border-right: 3px solid #6f718c;
 }
 
 .backTitle {

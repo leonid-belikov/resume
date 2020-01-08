@@ -76,6 +76,18 @@ const state = {
 			img: 'https://img.icons8.com/color/96/000000/postgreesql.png',
 			descriptionText: 'Lorem PostgreSQL ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
+		{
+			name: 'php',
+			category: 'other',
+			img: 'http://pngimg.com/uploads/php/php_PNG25.png',
+			descriptionText: 'Lorem PHP ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+		},
+		{
+			name: 'mysql',
+			category: 'other',
+			img: 'http://pngimg.com/uploads/mysql/mysql_PNG23.png',
+			descriptionText: 'Lorem MySQL ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+		},
 	],
 	contacts: [
 		{
@@ -85,7 +97,7 @@ const state = {
 			style: {
 				width: 180,
 				height: 180,
-				top: -90,
+				top: -95,
 				left: 10,
 			},
 			smallStyle: {
@@ -105,7 +117,7 @@ const state = {
 			style: {
 				width: 120,
 				height: 120,
-				top: -100,
+				top: -105,
 				left: -90,
 			},
 			smallStyle: {
@@ -125,7 +137,7 @@ const state = {
 			style: {
 				width: 204,
 				height: 204,
-				top: -160,
+				top: -165,
 				left: 300,
 			},
 			smallStyle: {
@@ -145,7 +157,7 @@ const state = {
 			style: {
 				width: 360,
 				height: 360,
-				top: -70,
+				top: -75,
 				left: -100,
 			},
 			smallStyle: {
@@ -161,11 +173,11 @@ const state = {
 		{
 			name: 'ig',
 			img: 'https://pngicon.ru/file/uploads/instagram.png',
-			link: '',
+			link: 'https://www.instagram.com/belikov_web_dev/',
 			style: {
 				width: 512,
 				height: 512,
-				top: -200,
+				top: -205,
 				left: 65,
 			},
 			smallStyle: {
@@ -185,7 +197,7 @@ const state = {
 			style: {
 				width: 256,
 				height: 256,
-				top: 0,
+				top: -5,
 				left: 200,
 			},
 			smallStyle: {
@@ -199,6 +211,62 @@ const state = {
 			deltaMove: 8,
 		},
 	],
+	expPage: {
+		exp: [
+			{
+				year: 2017,
+				stages: [
+					{
+						title: '',
+						period: '',
+						skills: ['html', 'css'],
+						description: ''
+					}
+				]
+			},
+			{
+				year: 2018,
+				stages: [
+					{
+						title: '',
+						period: '',
+						skills: ['git', 'js', 'php', 'mysql'],
+						description: ''
+					}
+				]
+			},
+			{
+				year: 2019,
+				stages: [
+					{
+						title: '',
+						period: '',
+						skills: ['python', 'postgresql'],
+						description: ''
+					},
+					{
+						title: '',
+						period: '',
+						skills: ['react', 'redux'],
+						description: ''
+					}
+				]
+			},
+			{
+				year: 2020,
+				stages: [
+					{
+						title: '',
+						period: '',
+						skills: [],
+						description: ''
+					}
+				]
+			},
+		],
+		selectedYear: 2020
+	},
+
 	backTitle: ''
 };
 

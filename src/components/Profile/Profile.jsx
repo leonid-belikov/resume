@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import css from './Profile.module.css';
 import Avatar from '../common/Avatar/Avatar';
-import MainSkill from '../common/MainSkill/MainSkill';
+import MainSkill from './MainSkill/MainSkill';
 import ContactItem from '../common/ContactItem/ContactItem';
 
 class Profile extends React.Component {

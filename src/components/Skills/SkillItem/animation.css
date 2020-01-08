@@ -3,7 +3,6 @@
 }
 
 .skillIcon-enter-done {
-    /*filter: drop-shadow(0 5px 5px #fff);*/
     transition: 2s;
 }
 
@@ -95,4 +94,24 @@ img.redux-icon {
 .postgresql-enter-done {
     stroke-dasharray: 285 450;
     transition: 1512ms linear;
+}
+
+.php-enter {
+    stroke-dasharray: 0 450;
+    stroke-width: 1px;
+}
+
+.php-enter-done {
+    stroke-dasharray: 225 450;
+    transition: 1192ms linear;
+}
+
+.mysql-enter {
+    stroke-dasharray: 0 450;
+    stroke-width: 1px;
+}
+
+.mysql-enter-done {
+    stroke-dasharray: 225 450;
+    transition: 1192ms linear;
 }

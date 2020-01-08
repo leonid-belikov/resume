@@ -16,6 +16,10 @@
     filter: none;
 }
 
+.container.small:hover {
+    z-index: 10;
+}
+
 .container.small img {
     filter: opacity(0.5);
     transition: 250ms;

@@ -9,7 +9,7 @@
 
 .mainInfo {
     flex-grow: 1;
-    padding: 50px 25px 25px 25px;
+    padding: 50px 25px 25px;
     overflow: auto;
 }
 

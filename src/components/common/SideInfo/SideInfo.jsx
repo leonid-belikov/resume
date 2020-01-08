@@ -2,22 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import css from './SideInfo.module.css';
 import Avatar from "../Avatar/Avatar";
-import MainSkill from "../MainSkill/MainSkill";
 import ContactItem from "../ContactItem/ContactItem";
+import {NavLink} from "react-router-dom";
 
 class SideInfo extends React.Component {
 
     render() {
-
-        const mainSkills = this.props.skills.filter((skill) => skill.category === 'frontend').map((skill) => {
-			return (
-				<MainSkill
-					img={skill.img}
-					name={skill.name}
-                    small={true}
-					key={skill.name}/>
-			)
-		});
 
 		const contacts = this.props.contacts.map((item) => {
 			return (
@@ -37,18 +27,15 @@ class SideInfo extends React.Component {
         return (
             <div className={css.container}>
                 <div className={css.nameWrap}>
-                    <div className={css.name}>Леонид Беликов</div>
+                    <NavLink className={css.link} to="/profile">
+                        <div className={css.name}>Леонид Беликов</div>
+                    </NavLink>
                 </div>
-                <div className={css.avatarWrap}>
-                    <div className={css.avatar}>
-                        <Avatar
-                            width="320"
-                            borderVisible={false}
-                        />
-                    </div>
-                    <div className={css.skills}>
-                        {mainSkills}
-                    </div>
+                <div className={css.avatar}>
+                    <Avatar
+                        width="320"
+                        borderVisible={false}
+                    />
                 </div>
                 <div className={css.contactsWrap}>
                     <div className={css.contacts}>

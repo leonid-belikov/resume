@@ -98,6 +98,5 @@
     grid-area: c;
     display: flex;
     position: relative;
-    bottom: 5px;
     padding-left: 70px;
 }

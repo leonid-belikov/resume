@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0 5px;
+    justify-content: flex-end;
+    transition: 500ms;
+    overflow: hidden;
+    align-items: flex-end;
+}
+.container:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.yearNum {
+    font-size: 60px;
+    display: flex;
+    align-items: flex-start;
+    line-height: 34px;
+}
+
+.selected {
+    background: rgba(255, 255, 255, 0.3);
+}
