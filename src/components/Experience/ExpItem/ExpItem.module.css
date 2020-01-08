@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    max-width: 780px;
+    color: #f0f0ff;
+}
+
+.title {
+    color: #2f304b;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 32px;
+    margin-bottom: 5px;
+    word-spacing: 6px;
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+}
+
+.period {
+    color: #c2caff;
+}
+
+.skills {
+    margin-right: 10px;
+}
+
+.description {
+
+}
+.description p {
+    margin: 10px 0;
+    font-weight: 200;
+}

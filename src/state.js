@@ -217,50 +217,69 @@ const state = {
 				year: 2017,
 				stages: [
 					{
-						title: '',
-						period: '',
+						title: 'Ради интереса изучил HTML и CSS в свободное время',
+						period: 'С ноября',
 						skills: ['html', 'css'],
-						description: ''
-					}
+						description: [
+							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
+							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.'
+						]
+					},
 				]
 			},
 			{
 				year: 2018,
 				stages: [
 					{
-						title: '',
-						period: '',
+						title: 'Прошел обучение на курсах профессиональной переподготовки в университете ИТМО',
+						period: 'С февраля по июнь',
 						skills: ['git', 'js', 'php', 'mysql'],
-						description: ''
-					}
+						description: [
+							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
+							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']
+					},
+					{
+						title: 'Ушел с прежней работы в IT-компанию на должность frontend-разработчика',
+						period: 'С октября',
+						skills: [],
+						description: [
+							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
+							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']
+					},
 				]
 			},
 			{
 				year: 2019,
 				stages: [
 					{
-						title: '',
-						period: '',
+						title: 'При менторcтве коллег изучил Python и PostgreSQL для помощи в backend-разработке',
+						period: 'С апреля',
 						skills: ['python', 'postgresql'],
-						description: ''
+						description: [
+							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
+							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']
 					},
 					{
-						title: '',
-						period: '',
+						title: 'Самостоятельно изучил React и Redux для погружения во frontend',
+						period: 'С ноября',
 						skills: ['react', 'redux'],
-						description: ''
-					}
+						description: [
+							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
+							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']
+					},
 				]
 			},
 			{
 				year: 2020,
 				stages: [
 					{
-						title: '',
-						period: '',
+						title: 'Опубликовал свой первый сайт на React в сети',
+						period: 'С января',
 						skills: [],
-						description: ''
-					}
+						description: [
+							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
+							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']
+					},
 				]
 			},
 		],

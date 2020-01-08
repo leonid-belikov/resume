@@ -15,8 +15,6 @@
     flex-direction: column;
 }
 
-
-
 .expItemsWrap {
     flex-grow: 1;
     height: calc(100% - 50px);
@@ -24,7 +22,7 @@
 }
 
 .expItemsWrap::-webkit-scrollbar {
-    width: 0px;
+    width: 0;
 }
 
 .expItemsWrap:hover::-webkit-scrollbar {
@@ -36,5 +34,5 @@
 }
 
 .expItems {
-    height: 750px;
+    height: fit-content;
 }

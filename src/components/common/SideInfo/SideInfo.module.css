@@ -14,10 +14,11 @@
 
 .name {
     letter-spacing: -2px;
-    font-size: 48px;
+    font-size: 46px;
     font-weight: 700;
     text-align: center;
     color: #2f304b;
+    word-spacing: 10px;
 }
 .link {
     text-decoration: none;
@@ -42,5 +43,5 @@
     height: 240px;
     position: relative;
     width: 320px;
-    border-right: 1px solid #2f304b;
+    border-right: 1px solid #3755cc;
 }
