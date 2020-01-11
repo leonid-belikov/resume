@@ -31,68 +31,92 @@ const state = {
 		{
 			name: 'html',
 			category: 'frontend',
-			img: 'https://pngicon.ru/file/uploads/html5.png',
+			img: '/icons/html5.png',
 			descriptionText: 'Lorem html ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'css',
 			category: 'frontend',
-			img: 'https://pngicon.ru/file/uploads/css3.png',
+			img: '/icons/css3.png',
 			descriptionText: 'Lorem css ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+		},
+		{
+			name: 'sass',
+			category: 'frontend',
+			img: '/icons/sass.png',
+			descriptionText: 'Lorem sass ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+		},
+		{
+			name: 'bootstrap',
+			category: 'frontend',
+			img: '/icons/bootstrap.png',
+			descriptionText: 'Lorem bootstrap ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'js',
 			category: 'frontend',
-			img: 'https://img.icons8.com/color/96/000000/javascript.png',
+			img: '/icons/js.png',
 			descriptionText: 'Lorem js ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'react',
 			category: 'frontend',
-			img: 'https://img.icons8.com/color/96/000000/react-native.png',
+			img: '/icons/react.png',
 			descriptionText: 'Lorem react ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'redux',
 			category: 'frontend',
-			img: 'http://ielkanyuk.ru/img/skills/redux.png',
+			img: '/icons/redux.png',
 			descriptionText: 'Lorem redux ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'git',
 			category: 'command',
-			img: 'https://img.icons8.com/color/96/000000/git.png',
+			img: '/icons/git.png',
 			descriptionText: 'Lorem git ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
-			name: 'python',
+			name: 'gulp',
 			category: 'other',
-			img: 'https://img.icons8.com/color/96/000000/python.png',
+			img: '/icons/gulp.png',
+			descriptionText: 'Lorem gulp ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+		},
+		{
+			name: 'python',
+			category: 'backend',
+			img: '/icons/python.png',
 			descriptionText: 'Lorem phyton ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'postgresql',
-			category: 'other',
-			img: 'https://img.icons8.com/color/96/000000/postgreesql.png',
+			category: 'backend',
+			img: '/icons/postgresql.png',
 			descriptionText: 'Lorem PostgreSQL ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
-			name: 'php',
+			name: 'django',
 			category: 'other',
-			img: 'http://pngimg.com/uploads/php/php_PNG25.png',
+			img: '/icons/django.png',
+			descriptionText: 'Lorem django ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+		},
+		{
+			name: 'php',
+			category: 'backend',
+			img: '/icons/php.png',
 			descriptionText: 'Lorem PHP ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'mysql',
-			category: 'other',
-			img: 'http://pngimg.com/uploads/mysql/mysql_PNG23.png',
+			category: 'backend',
+			img: '/icons/mysql.png',
 			descriptionText: 'Lorem MySQL ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 	],
 	contacts: [
 		{
 			name: 'gh',
-			img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png',
+			img: '/icons/gh.png',
 			link: 'https://github.com/leonidleonid',
 			style: {
 				width: 180,
@@ -106,14 +130,14 @@ const state = {
 				top: 10,
 				left: 180,
 			},
-			initTop: -90,
+			initTop: -95,
 			initLeft: 10,
 			deltaMove: 35,
 		},
 		{
-			name: 'hh',
-			img: 'https://upload.wikimedia.org/wikipedia/commons/7/79/HeadHunter_logo.png',
-			link: 'https://spb.hh.ru/resume/8ceb9cadff059e689b0039ed1f5764364d3338',
+			name: 'linn',
+			img: '/icons/linn.png',
+			link: '',
 			style: {
 				width: 120,
 				height: 120,
@@ -121,18 +145,18 @@ const state = {
 				left: -90,
 			},
 			smallStyle: {
-				width: 60,
-				height: 60,
+				width: 80,
+				height: 80,
 				top: 10,
 				left: 0,
 			},
-			initTop: -100,
+			initTop: -105,
 			initLeft: -90,
 			deltaMove: 22,
 		},
 		{
 			name: 'email',
-			img: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png',
+			img: '/icons/gmail.png',
 			link: 'mailto:lifeisgym@gmail.com?subject=Работа, frontend-разработчик',
 			style: {
 				width: 204,
@@ -146,13 +170,13 @@ const state = {
 				top: 20,
 				left: 60,
 			},
-			initTop: -160,
+			initTop: -165,
 			initLeft: 300,
 			deltaMove: 18,
 		},
 		{
 			name: 'tg',
-			img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1200px-Telegram_2019_Logo.svg.png',
+			img: '/icons/tg.png',
 			link: 'https://t.me/belikov_LL',
 			style: {
 				width: 360,
@@ -166,18 +190,18 @@ const state = {
 				top: 100,
 				left: 10,
 			},
-			initTop: -70,
+			initTop: -75,
 			initLeft: -100,
 			deltaMove: 12,
 		},
 		{
 			name: 'ig',
-			img: 'https://pngicon.ru/file/uploads/instagram.png',
+			img: '/icons/ig.png',
 			link: 'https://www.instagram.com/belikov_web_dev/',
 			style: {
 				width: 512,
 				height: 512,
-				top: -205,
+				top: -105,
 				left: 65,
 			},
 			smallStyle: {
@@ -186,13 +210,13 @@ const state = {
 				top: 130,
 				left: 170,
 			},
-			initTop: -200,
+			initTop: -105,
 			initLeft: 65,
 			deltaMove: 4,
 		},
 		{
 			name: 'vk',
-			img: 'https://pngicon.ru/file/uploads/vk-256x256.png',
+			img: '/icons/vk.png',
 			link: 'https://vk.com/id130355',
 			style: {
 				width: 256,
@@ -206,7 +230,7 @@ const state = {
 				top: 130,
 				left: 120,
 			},
-			initTop: 0,
+			initTop: -5,
 			initLeft: 200,
 			deltaMove: 8,
 		},
@@ -252,9 +276,17 @@ const state = {
 				year: 2019,
 				stages: [
 					{
-						title: 'При менторcтве коллег изучил Python и PostgreSQL для помощи в backend-разработке',
+						title: 'При менторcтве коллег изучил Python и PostgreSQL для участия в backend-разработке',
 						period: 'С апреля',
 						skills: ['python', 'postgresql'],
+						description: [
+							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
+							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']
+					},
+					{
+						title: 'Под впечатлением от Python самостоятельно изучил основы django',
+						period: 'С мая',
+						skills: ['django'],
 						description: [
 							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
 							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']
@@ -290,3 +322,4 @@ const state = {
 };
 
 export default state;
+

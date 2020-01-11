@@ -10,7 +10,7 @@ const ContactItem = (props) => {
             <a href={props.link} target={props.link ? '_blank' : ''}>
                 <img
                     src={props.img}
-                    alt={props.name}
+                    alt=''
                     height={props.height}
                     width={props.width}
                 />

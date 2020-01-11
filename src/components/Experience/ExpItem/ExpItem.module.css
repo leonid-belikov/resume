@@ -22,10 +22,12 @@
 
 .period {
     color: #c2caff;
+    padding-bottom: 3px;
 }
 
 .skills {
     margin-right: 10px;
+    display: flex;
 }
 
 .description {

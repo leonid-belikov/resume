@@ -53,6 +53,18 @@ class Skills extends React.Component {
             )
         });
 
+        const backendSkills = this.props.skills.filter((skill) => {
+            return skill.name.includes(this.props.searchRequest) && skill.category === 'backend';
+        }).map((skill) => {
+            return (
+                <SkillItem
+                    name={skill.name}
+                    img={skill.img}
+                    descriptionText={skill.descriptionText}
+                    key={skill.name}/>
+            )
+        });
+
         return (
             <div className={css.container}>
                 <div className={css.sideInfo}>
@@ -80,6 +92,10 @@ class Skills extends React.Component {
                             <div className={css.title}>Командная разработка</div>
                         }
                         {commandSkills}
+                        {backendSkills.length > 0 &&
+                            <div className={css.title}>Backend</div>
+                        }
+                        {backendSkills}
                         {otherSkills.length > 0 &&
                             <div className={css.title}>Смежные области</div>
                         }

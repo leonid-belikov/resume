@@ -39,7 +39,7 @@
     animation: iconShowing 500ms cubic-bezier(0.1,0.25,0.1,1) 2s 1 normal both
 }
 
-.normalSize.hh {
+.normalSize.linn {
     z-index: 5;
     animation: iconShowing 500ms cubic-bezier(0.1,0.25,0.1,1) 2.1s 1 normal both
 }
@@ -68,7 +68,7 @@
     animation: iconShowing 500ms cubic-bezier(0.1,0.25,0.1,1) 0.5s 1 normal both
 }
 
-.small.hh {
+.small.linn {
     animation: iconShowing 500ms cubic-bezier(0.1,0.25,0.1,1) 0.6s 1 normal both
 }
 

@@ -20,6 +20,10 @@
     fill-opacity: 0;
 }
 
+.circle:hover {
+    stroke-width: 3px;
+}
+
 .img {
     position: absolute;
     left: 65px;
