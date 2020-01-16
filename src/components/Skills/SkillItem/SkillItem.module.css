@@ -60,6 +60,14 @@
     font-weight: 200;
 }
 
+.html-icon, .css-icon {
+    transform: translate(-50%, -44%);
+}
+
+.redux-icon {
+    transform: translate(-50%, -54%);
+}
+
 .php-icon {
     width: 130px;
     height: 130px;

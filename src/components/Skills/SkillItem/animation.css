@@ -28,10 +28,6 @@
     transition: stroke-dasharray 1700ms linear, stroke-width 300ms;
 }
 
-img.html-icon, img.css-icon {
-    transform: translate(-50%, -44%);
-}
-
 .sass-enter {
     stroke-dasharray: 0 450;
     stroke-width: 1px;
@@ -80,10 +76,6 @@ img.html-icon, img.css-icon {
 .redux-enter-done {
     stroke-dasharray: 283 450;
     transition: stroke-dasharray 1500ms linear, stroke-width 300ms;
-}
-
-img.redux-icon {
-    transform: translate(-50%, -54%);
 }
 
 .git-enter {

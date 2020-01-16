@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from 'react-redux';
 import css from "./Portfolio.module.css";
 import SideInfo from "../common/SideInfo/SideInfo";
+import Projects from "./Projects/Projects";
 
 class Portfolio extends React.Component {
 
@@ -16,7 +17,7 @@ class Portfolio extends React.Component {
                     <SideInfo/>
                 </div>
                 <div className={css.mainInfo}>
-
+                    <Projects/>
                 </div>
             </div>
         )

@@ -317,6 +317,41 @@ const state = {
 		],
 		selectedYear: 2020
 	},
+	portfolioPage: {
+		projects: [
+			{
+				title: 'Сайт-резюме',
+				img: './img/portfolio/resume.png',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
+			},
+			{
+				title: 'Лэндинг для автошколы',
+				img: './img/portfolio/wroom_1.png',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
+			},
+			{
+				title: 'Приложение для учета личных финансов',
+				img: './img/portfolio/fire_app_1.png',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
+			},
+			{
+				title: 'Прототип "Онлайн-магазин"',
+				img: './img/portfolio/online_store_1.png',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
+			},
+			{
+				title: 'Прототип "Текстовые блоки"',
+				img: './img/portfolio/blocks_1.png',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
+			},
+			{
+				title: 'Прототип "Галерея событий"',
+				img: './img/portfolio/gallery.png',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
+			},
+		],
+		selectedProject: 0
+	},
 
 	backTitle: ''
 };
