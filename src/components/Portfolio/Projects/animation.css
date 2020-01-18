@@ -1,0 +1,19 @@
+.prev, .next {
+    cursor: pointer;
+}
+
+.prev {
+    transform: translate(-290px, -170px) scale(0.3);
+    z-index: 1;
+}
+
+.current {
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.next {
+    transform: translate(290px, -170px) scale(0.3);
+    z-index: 3;
+}

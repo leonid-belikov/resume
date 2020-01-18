@@ -322,31 +322,43 @@ const state = {
 			{
 				title: 'Сайт-резюме',
 				img: './img/portfolio/resume.png',
+				src: 'https://github.com/leonidleonid/resume',
+				link: '',
 				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
 			},
 			{
 				title: 'Лэндинг для автошколы',
 				img: './img/portfolio/wroom_1.png',
+				src: 'https://github.com/leonidleonid/wrooom',
+				link: '',
 				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
 			},
 			{
 				title: 'Приложение для учета личных финансов',
 				img: './img/portfolio/fire_app_1.png',
+				src: 'https://github.com/leonidleonid/fire_app',
+				link: '',
 				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
 			},
 			{
 				title: 'Прототип "Онлайн-магазин"',
 				img: './img/portfolio/online_store_1.png',
+				src: 'https://github.com/leonidleonid/onlinestore',
+				link: '',
 				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
 			},
 			{
 				title: 'Прототип "Текстовые блоки"',
 				img: './img/portfolio/blocks_1.png',
+				src: 'https://github.com/leonidleonid/blocks',
+				link: '',
 				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
 			},
 			{
 				title: 'Прототип "Галерея событий"',
 				img: './img/portfolio/gallery.png',
+				src: 'https://github.com/leonidleonid/gallery',
+				link: '',
 				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
 			},
 		],
@@ -357,4 +369,3 @@ const state = {
 };
 
 export default state;
-

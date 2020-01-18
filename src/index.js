@@ -48,6 +48,12 @@ function reducer(state = initialState, action) {
 			expPage.selectedYear = year;
 			return Object.assign({}, state, {expPage});
 
+		case 'CHANGE_PROJECT':
+			const newIdx = action.payload;
+			const portfolioPage = Object.assign({}, state.portfolioPage);
+			portfolioPage.selectedProject = newIdx;
+			return Object.assign({}, state, {portfolioPage});
+
 		default: return state;
 	}
 }
