@@ -1,29 +1,4 @@
 const state = {
-	profilePage: {
-		userInfo: {
-			userName: 'Алисэр',
-			userLastName: 'Торнэ',
-			userState: 'Компонента, ты чем занимаешься? Отрисовкой, мать твою!'
-		},
-		posts: [
-			{
-				id: 1,
-				text: 'Владыка Света хочет, чтобы врагов сжигали, Утонувший Бог — чтобы их топили. Почему все боги такие жестокие скоты? Где Бог титек и вина?'
-			},
-			{
-				id: 2,
-				text: 'Слушайте мою клятву и будьте свидетелями моего обета... Ночь собирается, и начинается мой дозор. Он не окончится до самой моей смерти. Я не возьму себе ни жены, ни земель, не буду отцом детям. Я не надену корону и не буду добиваться славы. Я буду жить и умру на своем посту. Я — меч во тьме; я — Дозорный на Стене; я — щит, охраняющий царство людей. Я отдаю свою жизнь и честь Ночному Дозору в эту ночь и все грядущие...'
-			},
-			{
-				id: 3,
-				text: 'А теперь иди и пей, пока не покажется, что ты всё сделал правильно.'
-			},
-			{
-				id: 4,
-				text: 'Есть только один бог. И его имя Смерть. А Смерти мы говорим лишь одно: «Не сегодня».'
-			}
-		]
-	},
 	skillsPage: {
 		searchRequest: ''
 	},
@@ -32,84 +7,98 @@ const state = {
 			name: 'html',
 			category: 'frontend',
 			img: '/icons/html5.png',
+			level: 5,
 			descriptionText: 'Lorem html ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'css',
 			category: 'frontend',
 			img: '/icons/css3.png',
+			level: 5,
 			descriptionText: 'Lorem css ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'sass',
 			category: 'frontend',
 			img: '/icons/sass.png',
+			level: 4,
 			descriptionText: 'Lorem sass ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'bootstrap',
 			category: 'frontend',
 			img: '/icons/bootstrap.png',
+			level: 3,
 			descriptionText: 'Lorem bootstrap ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'js',
 			category: 'frontend',
 			img: '/icons/js.png',
+			level: 5,
 			descriptionText: 'Lorem js ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'react',
 			category: 'frontend',
 			img: '/icons/react.png',
+			level: 4,
 			descriptionText: 'Lorem react ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'redux',
 			category: 'frontend',
 			img: '/icons/redux.png',
+			level: 4,
 			descriptionText: 'Lorem redux ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'git',
 			category: 'command',
 			img: '/icons/git.png',
+			level: 5,
 			descriptionText: 'Lorem git ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'gulp',
 			category: 'other',
 			img: '/icons/gulp.png',
+			level: 3,
 			descriptionText: 'Lorem gulp ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'python',
 			category: 'backend',
 			img: '/icons/python.png',
+			level: 4,
 			descriptionText: 'Lorem phyton ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'postgresql',
 			category: 'backend',
 			img: '/icons/postgresql.png',
+			level: 3,
 			descriptionText: 'Lorem PostgreSQL ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'django',
 			category: 'other',
 			img: '/icons/django.png',
+			level: 3,
 			descriptionText: 'Lorem django ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'php',
 			category: 'backend',
 			img: '/icons/php.png',
+			level: 3,
 			descriptionText: 'Lorem PHP ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 		{
 			name: 'mysql',
 			category: 'backend',
 			img: '/icons/mysql.png',
+			level: 3,
 			descriptionText: 'Lorem MySQL ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
 	],
@@ -119,120 +108,84 @@ const state = {
 			img: '/icons/gh.png',
 			link: 'https://github.com/leonidleonid',
 			style: {
-				width: 180,
-				height: 180,
-				top: -95,
-				left: 10,
+				width: 35,
+				height: 35,
 			},
 			smallStyle: {
-				width: 90,
-				height: 90,
-				top: 10,
-				left: 180,
+				width: 30,
+				height: 30,
 			},
-			initTop: -95,
-			initLeft: 10,
-			deltaMove: 35,
+			title: 'GitHub',
 		},
 		{
 			name: 'linn',
 			img: '/icons/linn.png',
-			link: '',
+			link: 'https://www.linkedin.com/in/belikov-web-dev',
 			style: {
-				width: 120,
-				height: 120,
-				top: -105,
-				left: -90,
+				width: 35,
+				height: 35,
 			},
 			smallStyle: {
-				width: 80,
-				height: 80,
-				top: 10,
-				left: 0,
+				width: 30,
+				height: 30,
 			},
-			initTop: -105,
-			initLeft: -90,
-			deltaMove: 22,
+			title: 'LinkedInn',
 		},
 		{
 			name: 'email',
 			img: '/icons/gmail.png',
 			link: 'mailto:lifeisgym@gmail.com?subject=Работа, frontend-разработчик',
 			style: {
-				width: 204,
-				height: 204,
-				top: -165,
-				left: 300,
+				width: 35,
+				height: 35,
 			},
 			smallStyle: {
-				width: 120,
-				height: 120,
-				top: 20,
-				left: 60,
+				width: 30,
+				height: 30,
 			},
-			initTop: -165,
-			initLeft: 300,
-			deltaMove: 18,
+			title: 'Gmail',
 		},
 		{
 			name: 'tg',
 			img: '/icons/tg.png',
 			link: 'https://t.me/belikov_LL',
 			style: {
-				width: 360,
-				height: 360,
-				top: -75,
-				left: -100,
+				width: 35,
+				height: 35,
 			},
 			smallStyle: {
-				width: 120,
-				height: 120,
-				top: 100,
-				left: 10,
+				width: 30,
+				height: 30,
 			},
-			initTop: -75,
-			initLeft: -100,
-			deltaMove: 12,
+			title: 'Telegram',
 		},
 		{
 			name: 'ig',
 			img: '/icons/ig.png',
 			link: 'https://www.instagram.com/belikov_web_dev/',
 			style: {
-				width: 512,
-				height: 512,
-				top: -105,
-				left: 65,
+				width: 35,
+				height: 35,
 			},
 			smallStyle: {
-				width: 90,
-				height: 90,
-				top: 130,
-				left: 170,
+				width: 30,
+				height: 30,
 			},
-			initTop: -105,
-			initLeft: 65,
-			deltaMove: 4,
+			title: 'Instagram',
 		},
 		{
 			name: 'vk',
 			img: '/icons/vk.png',
 			link: 'https://vk.com/id130355',
 			style: {
-				width: 256,
-				height: 256,
-				top: -5,
-				left: 200,
+				width: 35,
+				height: 35,
 			},
 			smallStyle: {
-				width: 60,
-				height: 60,
-				top: 130,
-				left: 120,
+				width: 30,
+				height: 30,
 			},
-			initTop: -5,
-			initLeft: 200,
-			deltaMove: 8,
+			title: 'VKontakte',
 		},
 	],
 	expPage: {
@@ -258,6 +211,14 @@ const state = {
 						title: 'Прошел обучение на курсах профессиональной переподготовки в университете ИТМО',
 						period: 'С февраля по июнь',
 						skills: ['git', 'js', 'php', 'mysql'],
+						description: [
+							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
+							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']
+					},
+					{
+						title: 'Добавить описание',
+						period: 'Добавить период',
+						skills: ['gulp', 'bootstrap', 'sass'],
 						description: [
 							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
 							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']
@@ -320,45 +281,45 @@ const state = {
 	portfolioPage: {
 		projects: [
 			{
-				title: 'Сайт-резюме',
-				img: './img/portfolio/resume.png',
-				src: 'https://github.com/leonidleonid/resume',
-				link: '',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
-			},
-			{
 				title: 'Лэндинг для автошколы',
 				img: './img/portfolio/wroom_1.png',
 				src: 'https://github.com/leonidleonid/wrooom',
-				link: '',
+				link: null,
+				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
+			},
+			{
+				title: 'Сайт-резюме',
+				img: './img/portfolio/resume.png',
+				src: 'https://github.com/leonidleonid/resume',
+				link: '/',
 				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
 			},
 			{
 				title: 'Приложение для учета личных финансов',
 				img: './img/portfolio/fire_app_1.png',
 				src: 'https://github.com/leonidleonid/fire_app',
-				link: '',
+				link: null,
 				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
 			},
 			{
-				title: 'Прототип "Онлайн-магазин"',
+				title: 'Прототип "Интернет-магазин"',
 				img: './img/portfolio/online_store_1.png',
 				src: 'https://github.com/leonidleonid/onlinestore',
-				link: '',
+				link: 'https://leonidleonid.github.io/onlinestore',
 				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
 			},
 			{
 				title: 'Прототип "Текстовые блоки"',
 				img: './img/portfolio/blocks_1.png',
 				src: 'https://github.com/leonidleonid/blocks',
-				link: '',
+				link: 'https://leonidleonid.github.io/blocks',
 				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
 			},
 			{
 				title: 'Прототип "Галерея событий"',
 				img: './img/portfolio/gallery.png',
 				src: 'https://github.com/leonidleonid/gallery',
-				link: '',
+				link: 'https://leonidleonid.github.io/gallery',
 				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
 			},
 		],

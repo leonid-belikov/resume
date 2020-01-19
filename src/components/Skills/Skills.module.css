@@ -9,26 +9,18 @@
 
 .mainInfo {
     flex-grow: 1;
-    padding: 50px 25px 25px;
-    overflow: auto;
-}
-
-.mainInfo::-webkit-scrollbar {
-    width: 0px;
-}
-
-.mainInfo:hover::-webkit-scrollbar {
-    width: 14px;
-}
-
-.mainInfo::-webkit-scrollbar-thumb {
-    border-right: 3px solid #6f718c;
+    padding: 150px 25px 0 70px;
+    overflow: hidden;
+    position: relative;
 }
 
 .findWrap {
     display: flex;
     justify-content: flex-end;
-    width: 800px;
+    width: 830px;
+    position: absolute;
+    left: 0;
+    top: 50px;
 }
 
 .find {
@@ -40,13 +32,14 @@
 .findInput {
     border: none;
     outline: none;
-    padding: 10px;
+    padding: 10px 40px 10px 10px;
     border-radius: 10px;
     width: 270px;
-    background: rgba(71, 108, 255, 0.1);
+    background: rgba(133, 134, 173, 0.1);
+    font-size: 16px;
 }
 .findInput:focus {
-    background: #f0f0ff;
+    background: #f2f2f2;
 }
 
 .img {
@@ -55,9 +48,27 @@
     right: 9px;
     bottom: 6px;}
 
+.skillsWrap {
+    overflow: auto;
+    height: 100%;
+}
+
+.skillsWrap::-webkit-scrollbar {
+    width: 0px;
+}
+
+.skillsWrap:hover::-webkit-scrollbar {
+    width: 14px;
+}
+
+.skillsWrap::-webkit-scrollbar-thumb {
+    border-right: 3px solid #6f718c;
+}
+
 .skills {
     display: flex;
     flex-direction: column;
+    padding-bottom: 120px;
 }
 
 .title {
@@ -66,4 +77,21 @@
     max-width: 480px;
     border-bottom: 1px solid #434e79;
     margin: 15px 0 25px 35px;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.btnToTop {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    position: absolute;
+    bottom: 180px;
+    opacity: 0.3;
+    transition: 300ms;
+    right: 40px;
+}
+
+.btnToTop:hover {
+    opacity: 1;
 }

@@ -14,6 +14,9 @@ const ContactItem = (props) => {
                     height={props.height}
                     width={props.width}
                 />
+                <div className={css.title}>
+                    {props.title}
+                </div>
             </a>
         </div>
     )

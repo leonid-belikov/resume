@@ -9,6 +9,18 @@
 
 .mainInfo {
     flex-grow: 1;
-    padding: 180px 110px 90px 170px;
+    padding: 150px 110px 30px 170px;
     overflow: auto;
+}
+
+.mainInfo::-webkit-scrollbar {
+    width: 0px;
+}
+
+.mainInfo:hover::-webkit-scrollbar {
+    width: 14px;
+}
+
+.mainInfo::-webkit-scrollbar-thumb {
+    border-right: 3px solid #6f718c;
 }

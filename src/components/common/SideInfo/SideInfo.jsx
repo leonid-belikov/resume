@@ -17,9 +17,8 @@ class SideInfo extends React.Component {
 					link={item.link}
 					width={item.smallStyle.width}
 					height={item.smallStyle.height}
-					top={item.smallStyle.top}
-					left={item.smallStyle.left}
                     small={true}
+                    title={item.title}
 					key={item.name}/>
 			)
 		});
@@ -33,14 +32,13 @@ class SideInfo extends React.Component {
                 </div>
                 <div className={css.avatar}>
                     <Avatar
-                        width="320"
+                        small={true}
+                        img='/img/avatar_3_mini.png'
                         borderVisible={false}
                     />
                 </div>
-                <div className={css.contactsWrap}>
-                    <div className={css.contacts}>
-                        {contacts}
-                    </div>
+                <div className={css.contacts}>
+                    {contacts}
                 </div>
             </div>
         )

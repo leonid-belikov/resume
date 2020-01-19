@@ -36,18 +36,19 @@ class Profile extends React.Component {
 					link={item.link}
 					width={item.style.width}
 					height={item.style.height}
-					top={item.style.top}
-					left={item.style.left}
+					title={item.title}
 					key={item.name}/>
 			)
 		});
 
 		return (
 			<div onMouseMove={this.onMouseMoveHandler.bind(this)} className={css.container}>
-				<Avatar
-					width="420"
-					borderVisible={true}
-				/>
+				<div className={css.avatar}>
+					<Avatar
+						img='/img/avatar_3_2.png'
+						borderVisible={true}
+					/>
+				</div>
 				<div className={css.specialty}>Frontend web-разработчик</div>
 				<div className={css.nameWrap}><div className={css.name}>Леонид Беликов</div></div>
 				<div className={css.mainSkillsWrap}>
@@ -55,8 +56,11 @@ class Profile extends React.Component {
 						{mainSkills}
 					</div>
 				</div>
+				<div className={css.email}>lifeisgym@gmail.com</div>
 				<div className={css.contacts}>
-					{contacts}
+					<div className={css.contactsWrap}>
+						{contacts}
+					</div>
 				</div>
 			</div>
 		)

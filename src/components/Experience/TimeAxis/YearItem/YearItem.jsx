@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { NavLink } from "react-router-dom";
 import css from './YearItem.module.css';
 
 class YearItem extends React.Component {
@@ -15,15 +16,17 @@ class YearItem extends React.Component {
         const year = this.props.year;
 
         return (
-            <div
-                year={year}
-                className={css.container + ' ' + activeStyle}
-                style={{width: this.props.width}}
-                onClick={this.onChangeSelectedYear.bind(this)}>
-                <div className={css.yearNum}>
-                    {year}
+            <a href="#expTop"
+                style={{display: 'block', width: this.props.width}}>
+                <div
+                    year={year}
+                    className={css.container + ' ' + activeStyle}
+                    onClick={this.onChangeSelectedYear.bind(this)}>
+                    <div className={css.yearNum}>
+                        {year}
+                    </div>
                 </div>
-            </div>
+            </a>
         )
     }
 

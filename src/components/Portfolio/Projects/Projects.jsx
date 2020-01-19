@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import css from './Projects.module.css';
-import './animation.css';
 
 class Projects extends React.Component {
     constructor(props) {
@@ -18,7 +17,7 @@ class Projects extends React.Component {
     }
 
     onChangeSelectedProject(e) {
-        const newCurrentIdx = parseInt(e.target.dataset.idx);
+        const newCurrentIdx = parseInt(e.target.dataset.idx || e.target.parentElement.dataset.idx);
         this.props.changeSelectedProject(newCurrentIdx);
     }
 
@@ -27,11 +26,7 @@ class Projects extends React.Component {
         const projects = this.props.projects;
         const selectedProject = this.props.selectedProject;
 
-        const prevIdx = this.getPrev(selectedProject);
-        const nextIdx = this.getNext(selectedProject);
-        const prevImg = projects[prevIdx].img;
         const currentImg = projects[selectedProject].img;
-        const nextImg = projects[nextIdx].img;
 
         const src = projects[selectedProject].src;
         const link = projects[selectedProject].link;
@@ -41,14 +36,11 @@ class Projects extends React.Component {
         return (
             <div className={css.container}>
                 <div className={css.covers}>
-                    <div className={`prev ${css.cover}`}>
-                        <img
-                            src={prevImg}
-                            alt=""
-                            data-idx={prevIdx}
-                            data-direction='back'
-                            onClick={this.onChangeSelectedProject.bind(this)}
-                        />
+                    <div
+                        className={css.arrowBox + ' ' + css.arrowToPrev}
+                        data-idx={this.getPrev(selectedProject)}
+                        onClick={this.onChangeSelectedProject.bind(this)}>
+                        <div className={css.arrow}></div>
                     </div>
                     <div className={`current ${css.cover}`}>
                         <img
@@ -57,22 +49,18 @@ class Projects extends React.Component {
                             alt=""
                         />
                         <div className={css.links}>
-                            <a href={src} className={css.src} target='_blank'>
-                                <img src="/icons/code.png" alt="" width={30}/>
-                            </a>
-                            <a href={link} className={css.link} target='_blank'>
+                            {link && <a href={link} className={css.link} target='_blank' title='Перейти на сайт'>
                                 <img src="/icons/link.png" alt="" width={24}/>
+                            </a>}
+                            <a href={src} className={css.src} target='_blank' title='Исходный код'>
+                                <img src="/icons/code.png" alt="" width={30}/>
                             </a>
                         </div>
                     </div>
-                    <div className={`next ${css.cover}`}>
-                        <img
-                            src={nextImg}
-                            alt=""
-                            data-idx={nextIdx}
-                            data-direction='forward'
-                            onClick={this.onChangeSelectedProject.bind(this)}
-                        />
+                    <div className={css.arrowBox + ' ' + css.arrowToNext}
+                        data-idx={this.getNext(selectedProject)}
+                        onClick={this.onChangeSelectedProject.bind(this)}>
+                        <div className={css.arrow}></div>
                     </div>
                 </div>
                 <div className={css.title}>

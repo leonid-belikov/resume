@@ -6,6 +6,11 @@ import SideInfo from "../common/SideInfo/SideInfo";
 
 class Skills extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.onScrollSkillsHandler = this.onScrollSkillsHandler.bind(this)
+    }
+
     componentDidMount() {
         this.props.updateBackTitle('skills');
     }
@@ -13,6 +18,11 @@ class Skills extends React.Component {
     onInputChange(e) {
         const value = e.target.value;
         this.props.inputChanged(value);
+    }
+
+    onScrollSkillsHandler(e) {
+        const target = e.target;
+        console.log('aaaa');
     }
 
     render() {
@@ -25,6 +35,7 @@ class Skills extends React.Component {
                     name={skill.name}
                     img={skill.img}
                     descriptionText={skill.descriptionText}
+                    level={skill.level}
                     key={skill.name}/>
             )
         });
@@ -37,6 +48,7 @@ class Skills extends React.Component {
                     name={skill.name}
                     img={skill.img}
                     descriptionText={skill.descriptionText}
+                    level={skill.level}
                     key={skill.name}/>
             )
         });
@@ -49,6 +61,7 @@ class Skills extends React.Component {
                     name={skill.name}
                     img={skill.img}
                     descriptionText={skill.descriptionText}
+                    level={skill.level}
                     key={skill.name}/>
             )
         });
@@ -61,6 +74,7 @@ class Skills extends React.Component {
                     name={skill.name}
                     img={skill.img}
                     descriptionText={skill.descriptionText}
+                    level={skill.level}
                     key={skill.name}/>
             )
         });
@@ -83,23 +97,26 @@ class Skills extends React.Component {
                             <img className={css.img} src="https://img.icons8.com/ios-filled/50/000000/search.png" alt=""/>
                         </div>
                     </div>
-                    <div className={css.skills}>
-                        {frontendSkills.length > 0 &&
-                            <div className={css.title}>Frontend</div>
-                        }
-                        {frontendSkills}
-                        {commandSkills.length > 0 &&
-                            <div className={css.title}>Командная разработка</div>
-                        }
-                        {commandSkills}
-                        {backendSkills.length > 0 &&
-                            <div className={css.title}>Backend</div>
-                        }
-                        {backendSkills}
-                        {otherSkills.length > 0 &&
-                            <div className={css.title}>Смежные области</div>
-                        }
-                        {otherSkills}
+                    <div className={css.skillsWrap}>
+                        <div className={css.skills} id="skills" onScroll={this.onScrollSkillsHandler}>
+                            {frontendSkills.length > 0 &&
+                                <div className={css.title}>Frontend</div>
+                            }
+                            {frontendSkills}
+                            {commandSkills.length > 0 &&
+                                <div className={css.title}>Командная разработка</div>
+                            }
+                            {commandSkills}
+                            {backendSkills.length > 0 &&
+                                <div className={css.title}>Backend</div>
+                            }
+                            {backendSkills}
+                            {otherSkills.length > 0 &&
+                                <div className={css.title}>Смежные области</div>
+                            }
+                            {otherSkills}
+                            <div className={css.btnToTop}><a href="#skills"><img src="/icons/toTop.png" alt=""/></a></div>
+                        </div>
                     </div>
                 </div>
             </div>

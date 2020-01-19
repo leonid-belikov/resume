@@ -8,7 +8,7 @@ import ExpItem from "./ExpItem/ExpItem";
 class Experience extends React.Component {
 
     componentDidMount() {
-        this.props.updateBackTitle('progress');
+        this.props.updateBackTitle('experience');
     }
 
     getIconUrlBySkillName(name) {
@@ -36,7 +36,7 @@ class Experience extends React.Component {
                 });
                 return Object.assign({}, item, {skills});
             });
-            const expItems = stages.map((item) => {
+            const expItems = stages.map((item, index) => {
                 return (
                     <ExpItem
                         title={item.title}
@@ -56,7 +56,7 @@ class Experience extends React.Component {
                     <div className={css.mainInfo}>
                         <TimeAxis/>
                         <div className={css.expItemsWrap}>
-                            <div className={css.expItems}>
+                            <div className={css.expItems} id="expTop">
                                 {expItems}
                             </div>
                         </div>

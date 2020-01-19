@@ -2,19 +2,20 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding-left: 25px;
 }
 
 .nameWrap {
     color: #2f304b;
     display: flex;
     justify-content: center;
-    padding: 35px 0 25px 0;
+    padding-top: 35px;
     flex-direction: column;
 }
 
 .name {
     letter-spacing: -2px;
-    font-size: 46px;
+    font-size: 42px;
     font-weight: 700;
     text-align: center;
     color: #2f304b;
@@ -28,20 +29,20 @@
     display: flex;
     justify-content: center;
     position: relative;
+    margin: 60px 0;
 }
 .avatar .border {
     display: none;
 }
 
-.contactsWrap {
+.contacts {
     flex-grow: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contacts {
-    height: 240px;
+    justify-content: flex-start;
     position: relative;
-    width: 320px;
-    border-right: 1px solid #3755cc;
+    width: 240px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-self: center;
+    padding-left: 60px;
 }

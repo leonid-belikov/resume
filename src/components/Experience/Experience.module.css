@@ -9,7 +9,7 @@
 
 .mainInfo {
     flex-grow: 1;
-    padding: 120px 25px 0 60px;
+    padding: 180px 25px 0 110px;
     overflow: auto;
     display: flex;
     flex-direction: column;
@@ -35,5 +35,5 @@
 
 .expItems {
     height: fit-content;
-    padding-bottom: 100px;
+    padding-bottom: 130px;
 }

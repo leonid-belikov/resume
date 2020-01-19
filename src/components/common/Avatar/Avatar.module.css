@@ -1,18 +1,23 @@
 .container {
     position: relative;
-    grid-area: a;
     z-index: 3;
 }
 
-.avatar {
-
+.container.small {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 250px;
+    border: solid 10px #6cafc8;
+    box-shadow: -5px 5px 10px 0 #797979;
 }
 
 .border {
     position: absolute;
-    border: 3px solid #90a1ff;
-    height: 492px;
-    width: 400px;
+    border: 8px solid #6cafc8;
+    height: 544px;
+    width: 415px;
     top: 20px;
     left: 45px;
+    filter: drop-shadow(-3px 3px 5px #666);
 }

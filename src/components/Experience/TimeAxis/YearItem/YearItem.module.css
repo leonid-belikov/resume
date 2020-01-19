@@ -6,6 +6,7 @@
     transition: 500ms;
     overflow: hidden;
     align-items: flex-end;
+    cursor: pointer;
 }
 .container:hover {
     background: rgba(255, 255, 255, 0.3);
@@ -16,6 +17,7 @@
     display: flex;
     align-items: flex-start;
     line-height: 34px;
+    color: #b8b8f4;
 }
 
 .selected {

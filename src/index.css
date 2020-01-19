@@ -3,11 +3,11 @@
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 24px;
     box-sizing: border-box;
 }
 
 body {
-    background: linear-gradient(0deg, #3660ff, #bec3ff);
+    background: linear-gradient(0deg, #6cafc8, #bfbff8 90%);
     overflow: hidden;
 }

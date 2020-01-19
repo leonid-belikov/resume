@@ -14,8 +14,8 @@
 }
 
 .html-enter-done {
-    stroke-dasharray: 320 450;
-    transition: stroke-dasharray 1700ms linear, stroke-width 300ms;
+    stroke-dasharray: 378 450;
+    transition: stroke-dasharray 700ms linear, stroke-width 300ms;
 }
 
 .css-enter {
@@ -24,8 +24,8 @@
 }
 
 .css-enter-done {
-    stroke-dasharray: 320 450;
-    transition: stroke-dasharray 1700ms linear, stroke-width 300ms;
+    stroke-dasharray: 378 450;
+    transition: stroke-dasharray 700ms linear, stroke-width 300ms;
 }
 
 .sass-enter {
