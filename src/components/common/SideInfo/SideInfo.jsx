@@ -15,8 +15,8 @@ class SideInfo extends React.Component {
 					img={item.img}
 					name={item.name}
 					link={item.link}
-					width={item.smallStyle.width}
-					height={item.smallStyle.height}
+					width='30'
+					height='30'
                     small={true}
                     title={item.title}
 					key={item.name}/>

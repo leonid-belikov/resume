@@ -5,12 +5,6 @@ import SkillItem from "./SkillItem/SkillItem";
 import SideInfo from "../common/SideInfo/SideInfo";
 
 class Skills extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.onScrollSkillsHandler = this.onScrollSkillsHandler.bind(this)
-    }
-
     componentDidMount() {
         this.props.updateBackTitle('skills');
     }
@@ -18,11 +12,6 @@ class Skills extends React.Component {
     onInputChange(e) {
         const value = e.target.value;
         this.props.inputChanged(value);
-    }
-
-    onScrollSkillsHandler(e) {
-        const target = e.target;
-        console.log('aaaa');
     }
 
     render() {
@@ -98,7 +87,7 @@ class Skills extends React.Component {
                         </div>
                     </div>
                     <div className={css.skillsWrap}>
-                        <div className={css.skills} id="skills" onScroll={this.onScrollSkillsHandler}>
+                        <div className={css.skills} id="skills">
                             {frontendSkills.length > 0 &&
                                 <div className={css.title}>Frontend</div>
                             }

@@ -49,10 +49,10 @@ class Projects extends React.Component {
                             alt=""
                         />
                         <div className={css.links}>
-                            {link && <a href={link} className={css.link} target='_blank' title='Перейти на сайт'>
+                            {link && <a href={link} className={css.link} target='_blank' rel="noopener noreferrer" title='Перейти на сайт'>
                                 <img src="/icons/link.png" alt="" width={24}/>
                             </a>}
-                            <a href={src} className={css.src} target='_blank' title='Исходный код'>
+                            <a href={src} className={css.src} target='_blank' rel="noopener noreferrer" title='Исходный код'>
                                 <img src="/icons/code.png" alt="" width={30}/>
                             </a>
                         </div>

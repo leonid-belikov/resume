@@ -25,23 +25,6 @@ function reducer(state = initialState, action) {
 					backTitle: newBackTitleValue
 			});
 
-		case 'MOVE_CONTACT_ICONS':
-			const x = action.payload.x;
-			const y = action.payload.y;
-			const width = document.documentElement.clientWidth;
-			const height = document.documentElement.clientHeight;
-			const dx = ((width / 2) - x) / (width / 2);
-			const dy = ((height / 2) - y) / (height / 2);
-			const rounded_dx = Math.round(dx * 10) / 10;
-			const rounded_dy = Math.round(dy * 10) / 10;
-
-			const contacts = state.contacts.slice();
-			for (let item of contacts) {
-				item.style.left = item.initLeft + item.deltaMove * rounded_dx;
-				item.style.top = item.initTop + item.deltaMove * rounded_dy;
-			}
-			return Object.assign({}, state, {contacts});
-
 		case 'CHANGE_YEAR':
 			const year = action.payload;
 			const expPage = Object.assign({}, state.expPage);

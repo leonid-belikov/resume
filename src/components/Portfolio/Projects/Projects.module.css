@@ -43,8 +43,8 @@
 .arrow {
     height: 30px;
     width: 30px;
-    border-bottom: 1px solid #f1e455;
-    border-left: 1px solid #f1e455;
+    border-bottom: 2px solid #f1e455;
+    border-left: 2px solid #f1e455;
     transition: 300ms;
 }
 

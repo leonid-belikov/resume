@@ -8,77 +8,77 @@ const state = {
 			category: 'frontend',
 			img: '/icons/html5.png',
 			level: 5,
-			descriptionText: 'Lorem html ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+			descriptionText: 'При верстке применяю общепринятые правила оформления HTML-кода, а также семантические элементы HTML5'
 		},
 		{
 			name: 'css',
 			category: 'frontend',
 			img: '/icons/css3.png',
 			level: 5,
-			descriptionText: 'Lorem css ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+			descriptionText: 'Стилизирую, трансформирую, создаю анимацию элементов DOM с помощью CSS-свойств, применяю методологию БЭМ'
 		},
 		{
 			name: 'sass',
 			category: 'frontend',
 			img: '/icons/sass.png',
 			level: 4,
-			descriptionText: 'Lorem sass ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+			descriptionText: 'Оптимизирую написание стилей с помощью вложенности, фрагментирования и импорта кода, использования переменных'
 		},
 		{
 			name: 'bootstrap',
 			category: 'frontend',
 			img: '/icons/bootstrap.png',
 			level: 3,
-			descriptionText: 'Lorem bootstrap ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+			descriptionText: 'Использую сетку из библиотеки bootstrap-grid для оптимизации разметки'
 		},
 		{
 			name: 'js',
 			category: 'frontend',
 			img: '/icons/js.png',
 			level: 5,
-			descriptionText: 'Lorem js ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+			descriptionText: 'Организую код в виде отдельно подключаемых JS-файлов или модулей на основе require.js, описываю взаимодейтвие с элементами DOM на чистом JS или с помощью JQuery, для запросов на сервер использую XHR, fetch, применяю синтаксис и инструменты ES6+, архитектуру MV*'
 		},
 		{
 			name: 'react',
 			category: 'frontend',
 			img: '/icons/react.png',
 			level: 4,
-			descriptionText: 'Lorem react ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+			descriptionText: 'Создаю полноценные SPA c применением функциональных и классовых компонентов, роутинга, манипулировать состоянием классовых компонентов на разных этапах жизненного цикла'
 		},
 		{
 			name: 'redux',
 			category: 'frontend',
 			img: '/icons/redux.png',
 			level: 4,
-			descriptionText: 'Lorem redux ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+			descriptionText: 'Оптимизирую работу с хранилищем данных о состоянии приложения и обработчиками событий с помощью mapStateToProps(), mapDispatchToProps()'
 		},
 		{
 			name: 'git',
 			category: 'command',
 			img: '/icons/git.png',
 			level: 5,
-			descriptionText: 'Lorem git ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+			descriptionText: 'Настраиваю конфигурацию, создаю алиасы, выполняю подключение и синхронизацию с удаленным репозиторием, перебазирование веток, копирование, слияние, откат коммитов, умею работать в команде по принципу Git-flow'
 		},
 		{
 			name: 'gulp',
 			category: 'other',
 			img: '/icons/gulp.png',
 			level: 3,
-			descriptionText: 'Lorem gulp ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+			descriptionText: 'Применяю для автоматической компиляции SASS в CSS, минификации HTML, CSS, JS-файлов, сжатия изображений, копирования и перемещения файлов и директорий'
 		},
 		{
 			name: 'python',
 			category: 'backend',
 			img: '/icons/python.png',
 			level: 4,
-			descriptionText: 'Lorem phyton ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+			descriptionText: 'Имею опыт в написании логики серверной части web-приложений (обработке данных, получаемых от клиента, отправке запросов к БД, отправке данных, полученных из БД, на клиент) с применением функционального и объектно-ориентированного стиля'
 		},
 		{
 			name: 'postgresql',
 			category: 'backend',
 			img: '/icons/postgresql.png',
 			level: 3,
-			descriptionText: 'Lorem PostgreSQL ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+			descriptionText: 'Имею опыт составления и оптимизации запросов к БД для чтения, создания и обновления записей с использованием JOIN, UNION, вложенных запросов, EXIST, CASE и др.'
 		},
 		{
 			name: 'django',
@@ -107,84 +107,36 @@ const state = {
 			name: 'gh',
 			img: '/icons/gh.png',
 			link: 'https://github.com/leonidleonid',
-			style: {
-				width: 35,
-				height: 35,
-			},
-			smallStyle: {
-				width: 30,
-				height: 30,
-			},
 			title: 'GitHub',
 		},
 		{
 			name: 'linn',
 			img: '/icons/linn.png',
 			link: 'https://www.linkedin.com/in/belikov-web-dev',
-			style: {
-				width: 35,
-				height: 35,
-			},
-			smallStyle: {
-				width: 30,
-				height: 30,
-			},
 			title: 'LinkedInn',
 		},
 		{
 			name: 'email',
 			img: '/icons/gmail.png',
 			link: 'mailto:lifeisgym@gmail.com?subject=Работа, frontend-разработчик',
-			style: {
-				width: 35,
-				height: 35,
-			},
-			smallStyle: {
-				width: 30,
-				height: 30,
-			},
 			title: 'Gmail',
 		},
 		{
 			name: 'tg',
 			img: '/icons/tg.png',
 			link: 'https://t.me/belikov_LL',
-			style: {
-				width: 35,
-				height: 35,
-			},
-			smallStyle: {
-				width: 30,
-				height: 30,
-			},
 			title: 'Telegram',
 		},
 		{
 			name: 'ig',
 			img: '/icons/ig.png',
 			link: 'https://www.instagram.com/belikov_web_dev/',
-			style: {
-				width: 35,
-				height: 35,
-			},
-			smallStyle: {
-				width: 30,
-				height: 30,
-			},
 			title: 'Instagram',
 		},
 		{
 			name: 'vk',
 			img: '/icons/vk.png',
 			link: 'https://vk.com/id130355',
-			style: {
-				width: 35,
-				height: 35,
-			},
-			smallStyle: {
-				width: 30,
-				height: 30,
-			},
 			title: 'VKontakte',
 		},
 	],

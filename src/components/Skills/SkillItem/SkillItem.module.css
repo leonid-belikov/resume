@@ -60,5 +60,7 @@
 
 .text {
     font-weight: 200;
-    line-height: 30px;
+    line-height: 25px;
+    word-spacing: 5px;
+    font-size: 20px;
 }

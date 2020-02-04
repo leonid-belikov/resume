@@ -11,12 +11,6 @@ class Profile extends React.Component {
 		this.props.updateBackTitle('profile');
 	}
 
-	onMouseMoveHandler(e) {
-		const x = e.pageX;
-		const y = e.pageY;
-		this.props.moveContactIcons({x, y});
-	}
-
 	render() {
 
 		const mainSkills = this.props.skills.filter((skill) => skill.category === 'frontend').map((skill) => {
@@ -34,15 +28,15 @@ class Profile extends React.Component {
 					img={item.img}
 					name={item.name}
 					link={item.link}
-					width={item.style.width}
-					height={item.style.height}
+					width='35'
+					height='35'
 					title={item.title}
 					key={item.name}/>
 			)
 		});
 
 		return (
-			<div onMouseMove={this.onMouseMoveHandler.bind(this)} className={css.container}>
+			<div className={css.container}>
 				<div className={css.avatar}>
 					<Avatar
 						img='/img/avatar_3_2.png'
@@ -76,9 +70,6 @@ export default connect(
 	dispatch => ({
         updateBackTitle: (value) => {
             dispatch({type: 'CHANGE_BACKTITLE', payload: value, fromSearch: false})
-        },
-        moveContactIcons: (value) => {
-        	dispatch({type: 'MOVE_CONTACT_ICONS', payload: value})
-		}
+        }
 	})
 )(Profile);
