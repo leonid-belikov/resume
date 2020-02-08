@@ -8,9 +8,9 @@ const Avatar = (props) => {
     const smallClass = props.small ? css.small : '';
 
     return (
-        <div className={css.container + ' ' + smallClass}>
-            <img className={css.avatar} src={props.img} alt=''></img>
-            <div className={css.border} style={{display: borderDisplay}}></div>
+        <div className={css.container + ' avatar_container ' + smallClass}>
+            <img src={props.img} alt=''></img>
+            <div className={css.border + ' avatar_border'} style={{display: borderDisplay}}></div>
         </div>
     )
 };

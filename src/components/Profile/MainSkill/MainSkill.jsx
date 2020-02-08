@@ -8,7 +8,7 @@ const MainSkill = (props) => {
             <HashLink to={{
                 pathname: '/skills',
                 hash: `#${props.name}`}}>
-                <img src={props.img} alt={props.name} className={css[props.name]}/>
+                <img src={props.img} alt={props.name} className={css[props.name] + ` mainSkill_${props.name}`}/>
             </HashLink>
         </div>
     )

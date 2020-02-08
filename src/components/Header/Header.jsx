@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 
 const Header = () => {
     return (
-        <div className={css.header}>
+        <div className={css.header + ' header'}>
 			<nav className={css.nav}>
                 <NavLink className={css.item} activeClassName={css.active} to="/profile">Профиль</NavLink>
                 <NavLink className={css.item} activeClassName={css.active} to="/skills">Навыки</NavLink>

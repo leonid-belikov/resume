@@ -5,6 +5,7 @@ import { createStore } from 'redux';
 
 import App from './App.jsx';
 import './index.css';
+import './media.css';
 import initialState from './state.js';
 
 function reducer(state = initialState, action) {

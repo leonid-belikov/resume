@@ -6,7 +6,7 @@ const ContactItem = (props) => {
     const smallClass = props.small ? `${css.small}` : `${css.normalSize}`;
 
     return (
-        <div className={`${css.container} ${css[props.name]} ${smallClass}`} style={{top: props.top, left: props.left}}>
+        <div className={`${css.container} ${css[props.name]} ${smallClass} contactItem_container`} style={{top: props.top, left: props.left}}>
             <a href={props.link} target={props.link ? '_blank' : ''}>
                 <img
                     src={props.img}
@@ -14,7 +14,7 @@ const ContactItem = (props) => {
                     height={props.height}
                     width={props.width}
                 />
-                <div className={css.title}>
+                <div className={css.title + ' contactItem_title'}>
                     {props.title}
                 </div>
             </a>

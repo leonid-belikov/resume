@@ -24,13 +24,13 @@ const state = {
 			level: 4,
 			descriptionText: 'Оптимизирую написание стилей с помощью вложенности, фрагментирования и импорта кода, использования переменных'
 		},
-		{
-			name: 'bootstrap',
-			category: 'frontend',
-			img: '/icons/bootstrap.png',
-			level: 3,
-			descriptionText: 'Использую сетку из библиотеки bootstrap-grid для оптимизации разметки'
-		},
+		// {
+		// 	name: 'bootstrap',
+		// 	category: 'frontend',
+		// 	img: '/icons/bootstrap.png',
+		// 	level: 3,
+		// 	descriptionText: 'Использую сетку из библиотеки bootstrap-grid для оптимизации разметки'
+		// },
 		{
 			name: 'js',
 			category: 'frontend',

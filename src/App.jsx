@@ -14,10 +14,10 @@ class App extends React.Component {
 
 		return (
 			<BrowserRouter>
-				<div className={css.container}>
+				<div className={css.container + ' app_container'}>
 					<Header/>
-					<div className={css.backTitle}>{this.props.backTitle}</div>
-					<div className={css.content}>
+					<div className={css.backTitle + ' app_backTitle'}>{this.props.backTitle}</div>
+					<div className={css.content + ' app_content'}>
 						<Switch>
 							<Route exact path="/" render={() => <Redirect to="/profile"/>}/>
 							<Route path="/profile" component={Profile}/>

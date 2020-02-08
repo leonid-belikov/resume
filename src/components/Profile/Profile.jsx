@@ -36,23 +36,33 @@ class Profile extends React.Component {
 		});
 
 		return (
-			<div className={css.container}>
-				<div className={css.avatar}>
+			<div className={css.container + ' profile_container'}>
+				<div className={css.avatar + ' profile_avatar'}>
 					<Avatar
 						img='/img/avatar_3_2.png'
 						borderVisible={true}
 					/>
 				</div>
-				<div className={css.specialty}>Frontend web-разработчик</div>
-				<div className={css.nameWrap}><div className={css.name}>Леонид Беликов</div></div>
-				<div className={css.mainSkillsWrap}>
-					<div className={css.mainSkills}>
+				<div className={css.specialtyWrap + ' profile_specialtyWrap'}>
+					<div className={css.internal + ' profile_internal'}>
+						Frontend web-разработчик
+					</div>
+				</div>
+				<div className={css.nameWrap + ' profile_nameWrap'}>
+					<div className={css.name + ' ' + css.internal + ' profile_name profile_internal'}>Леонид Беликов</div>
+				</div>
+				<div className={css.mainSkillsWrap + ' profile_mainSkillsWrap'}>
+					<div className={css.mainSkills + ' profile_mainSkills'}>
 						{mainSkills}
 					</div>
 				</div>
-				<div className={css.email}>lifeisgym@gmail.com</div>
-				<div className={css.contacts}>
-					<div className={css.contactsWrap}>
+				<div className={css.emailWrap}>
+					<div className={css.internal + ' profile_internal'}>
+						lifeisgym@gmail.com
+					</div>
+				</div>
+				<div className={css.contactsWrap + ' profile_contactsWrap'}>
+					<div className={css.contacts + ' profile_contacts'}>
 						{contacts}
 					</div>
 				</div>
