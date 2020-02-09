@@ -1,16 +1,19 @@
 .container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     height: 100%;
-    padding-left: 25px;
+    grid-template-areas:
+        'n'
+        'a'
+        'c';
+    grid-template-rows: 140px 300px;
 }
 
 .nameWrap {
+    grid-area: n;
     color: #2f304b;
     display: flex;
     justify-content: center;
-    padding-top: 35px;
-    flex-direction: column;
+    align-items: flex-end;
 }
 
 .name {
@@ -20,29 +23,29 @@
     text-align: center;
     color: #2f304b;
     word-spacing: 10px;
+    cursor: pointer;
 }
 .link {
     text-decoration: none;
 }
 
 .avatar {
+    grid-area: a;
     display: flex;
     justify-content: center;
-    position: relative;
-    margin: 60px 0;
+    align-items: center;
 }
 .avatar .border {
     display: none;
 }
 
 .contacts {
-    flex-grow: 1;
+    grid-area: c;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     position: relative;
-    width: 240px;
     flex-wrap: wrap;
     flex-direction: column;
-    align-self: center;
-    padding-left: 60px;
+    align-self: flex-start;
+    padding: 10px 0 0 90px;
 }

@@ -87,20 +87,20 @@ const state = {
 			level: 3,
 			descriptionText: 'Lorem django ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
 		},
-		{
-			name: 'php',
-			category: 'backend',
-			img: '/icons/php.png',
-			level: 3,
-			descriptionText: 'Lorem PHP ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
-		},
-		{
-			name: 'mysql',
-			category: 'backend',
-			img: '/icons/mysql.png',
-			level: 3,
-			descriptionText: 'Lorem MySQL ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
-		},
+		// {
+		// 	name: 'php',
+		// 	category: 'backend',
+		// 	img: '/icons/php.png',
+		// 	level: 3,
+		// 	descriptionText: 'Lorem PHP ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+		// },
+		// {
+		// 	name: 'mysql',
+		// 	category: 'backend',
+		// 	img: '/icons/mysql.png',
+		// 	level: 3,
+		// 	descriptionText: 'Lorem MySQL ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+		// },
 	],
 	contacts: [
 		{

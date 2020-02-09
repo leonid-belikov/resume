@@ -69,45 +69,45 @@ class Skills extends React.Component {
         });
 
         return (
-            <div className={css.container}>
-                <div className={css.sideInfo}>
+            <div className={css.container + ' skills_container'}>
+                <div className={css.sideInfo + ' skills_sideInfo'}>
                     <SideInfo/>
                 </div>
-                <div className={css.mainInfo}>
-                    <div className={css.findWrap}>
+                <div className={css.mainInfo + ' skills_mainInfo'}>
+                    <div className={css.findWrap + ' skills_findWrap'}>
                         <div className={css.find}>
                             <input
                                 type="text"
                                 value={this.props.searchRequest}
                                 onChange={this.onInputChange.bind(this)}
-                                className={css.findInput}
+                                className={css.findInput + ' skills_findInput'}
                                 placeholder="Введите название технологии..."
                             />
-                            <img className={css.img} src="https://img.icons8.com/ios-filled/50/000000/search.png" alt=""/>
+                            <img className={css.img + ' skills_img'} src="https://img.icons8.com/ios-filled/50/000000/search.png" alt=""/>
                         </div>
                     </div>
                     <div className={css.skillsWrap}>
-                        <div className={css.skills} id="skills">
+                        <div className={css.skills + ' skills'} id="skills">
                             {frontendSkills.length > 0 &&
-                                <div className={css.title}>Frontend</div>
+                                <div className={css.title + ' skills_title'}>Frontend</div>
                             }
                             {frontendSkills}
                             {commandSkills.length > 0 &&
-                                <div className={css.title}>Командная разработка</div>
+                                <div className={css.title + ' skills_title'}>Командная разработка</div>
                             }
                             {commandSkills}
                             {backendSkills.length > 0 &&
-                                <div className={css.title}>Backend</div>
+                                <div className={css.title + ' skills_title'}>Backend</div>
                             }
                             {backendSkills}
                             {otherSkills.length > 0 &&
-                                <div className={css.title}>Смежные области</div>
+                                <div className={css.title + ' skills_title'}>Смежные области</div>
                             }
                             {otherSkills}
-                            <div className={css.btnToTop}><a href="#skills"><img src="/icons/toTop.png" alt=""/></a></div>
                         </div>
                     </div>
                 </div>
+                <div className={css.btnToTop + ' skills_btnToTop'}><a href="#skills"><img src="/icons/toTop.png" alt=""/></a></div>
             </div>
         )
     }

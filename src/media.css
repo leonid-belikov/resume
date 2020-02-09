@@ -1,4 +1,6 @@
 @media (max-width: 1200px) {
+
+    /*main page*/
     .app_container {
         max-width: 900px;
     }
@@ -33,15 +35,59 @@
         margin-top: 0;
         justify-content: space-around;
     }
+
+    /*skills page*/
+    .skills_sideInfo {
+        width: 240px;
+    }
+    .sideInfo_container {
+        padding: 0;
+        grid-template-rows: 135px 290px;
+    }
+    .sideInfo_container .avatar_container {
+        width: 200px;
+        height: 200px;
+    }
+    .sideInfo_name {
+        font-size: 35px;
+    }
+    .sideInfo_contacts {
+        padding: 20px 0 0 70px;
+    }
+    .skills_mainInfo {
+        padding: 150px 0 0 50px;
+    }
+    .skills_findWrap {
+        width: 560px;
+    }
+    .skills_title {
+        max-width: 320px;
+        margin-left: 0;
+    }
+    .skillItem_container {
+        padding: 15px 0;
+        max-width: 500px;
+    }
+    .skillItem_icon {
+        width: 80px;
+    }
+    .skillItem_description {
+        max-width: 380px;
+    }
 }
 
 @media (max-width: 900px) and (orientation: portrait) {
     .app_container {
         max-width: 700px;
     }
+    .app_content {
+        margin: 0 20px;
+    }
     .header {
         top: 20px;
     }
+
+    /*main page*/
     .profile_container {
         grid-template-areas:
             'a a'
@@ -82,6 +128,59 @@
         flex-wrap: wrap;
         height: 100%;
     }
+
+    /*skills page*/
+    .skills_sideInfo {
+        width: 30%;
+    }
+    .sideInfo_container {
+        grid-template-rows: 155px 290px;
+    }
+    .sideInfo_name {
+        line-height: 35px;
+    }
+    .sideInfo_container .avatar_container img {
+        height: auto;
+    }
+    .sideInfo_contacts {
+        padding: 20px 0 0 45px;
+    }
+    .skills {
+        max-width: 395px;
+    }
+    .skills_findWrap {
+        width: 100%;
+    }
+    .skills_title {
+        max-width: 240px;
+    }
+    .skillItem_container {
+        position: relative;
+    }
+    .skillItem_icon {
+        position: absolute;
+    }
+    .skillItem_img {
+        width: 55px;
+        height: 55px;
+    }
+    .skillItem_description {
+        padding: 0;
+    }
+    .skillItem_title {
+        margin-left: 80px;
+    }
+    .skillItem_scale {
+        margin-left: 80px;
+    }
+    .skillItem_text {
+        margin-top: 10px;
+    }
+    .skills_btnToTop {
+        right: auto;
+        left: 90px;
+        bottom: 100px;
+    }
 }
 
 @media (max-width: 600px) and (orientation: portrait) {
@@ -107,12 +206,14 @@
     .app_backTitle {
         font-size: 160px;
         letter-spacing: -21px;
-        bottom: -17px;
         right: -7px;
+        line-height: 220px;
     }
     .app_content {
         margin: 0 20px;
     }
+
+    /*main page*/
     .profile_container {
         padding-top: 40px;
         height: 90%;
@@ -181,8 +282,62 @@
     .contactItem_container {
         margin: 0;
     }
+    .contactItem_container img {
+        width: 30px;
+        height: 30px;
+    }
     .contactItem_title {
         display: none;
+    }
+
+    /*skills page*/
+    .skills_container {
+        flex-direction: column;
+    }
+    .skills_sideInfo {
+        width: 100%;
+    }
+    .sideInfo_container {
+        grid-template-areas:
+            'a n'
+            'c c';
+        grid-template-rows: 100px 60px;
+        padding-top: 60px;
+    }
+    .sideInfo_nameWrap {
+        align-items: center;
+    }
+    .sideInfo_name {
+        font-size: 30px;
+    }
+    .sideInfo_container .avatar_container {
+        width: 100px;
+        height: 100px;
+        border-width: 5px;
+    }
+    .sideInfo_contacts {
+        justify-content: space-between;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+    }
+    .skills_mainInfo {
+        padding: 55px 0 0 0;
+    }
+    .skills_findWrap {
+        top: 0;
+    }
+    .skills {
+        padding: 0;
+    }
+    .skills_title {
+        margin: 0;
+    }
+    .skills_btnToTop {
+        left: auto;
+        right: 10px;
+        bottom: 120px;
     }
 }
 
@@ -194,13 +349,27 @@
         height: 40px;
         top: 5px;
     }
+    .header_nav:hover {
+        animation: showNavSmall 0.7s ease-out 0s 1 alternate both;
+    }
+    @keyframes showNavSmall {
+        0%  { transform: rotateZ(90deg); width: 5px; }
+        20%  { transform: rotateZ(0deg); width: 10px; }
+        100%  { transform: rotateZ(0deg); width: 400px; }
+    }
+    .header_item {
+        font-size: 16px;
+        margin: 0 10px;
+    }
     .app_backTitle {
         font-size: 180px;
-        bottom: -12px;
+        line-height: 205px;
     }
     .app_content {
         margin: 0 30px;
     }
+
+    /*main page*/
     .profile_container {
         grid-template-areas:
             'a s'
@@ -218,7 +387,6 @@
         max-width: 200px;
     }
     .avatar_border {
-        display: block;
         left: 15px;
         top: 10px;
         border-width: 4px;
@@ -274,5 +442,128 @@
     }
     .contactItem_title {
         display: none;
+    }
+
+    /*skills page*/
+    .skills_container {
+        flex-direction: column;
+    }
+    .skills_sideInfo {
+        width: 100%;
+    }
+    .sideInfo_container {
+        grid-template-areas: 'a n c';
+        height: auto;
+        grid-template-rows: 70px;
+        grid-template-columns: 100px;
+        padding-top: 35px;
+    }
+    .sideInfo_nameWrap {
+        align-items: center;
+    }
+    .sideInfo_name {
+        font-size: 32px;
+    }
+    .sideInfo_container .avatar_container {
+        width: 80px;
+        height: 80px;
+        border-width: 5px;
+    }
+    .sideInfo_contacts {
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+    }
+    .contactItem_container {
+        margin: 0 5px;
+    }
+    .contactItem_container img {
+        width: 25px;
+        height: 25px;
+    }
+    .skills_mainInfo {
+        padding: 50px 0 0 0;
+    }
+    .skills_findWrap {
+        top: 0;
+    }
+    .Skills_skillsWrap__Q-ysQ {
+        padding: 0 5px;
+    }
+    .skills {
+        padding: 0;
+        max-width: 555px;
+    }
+    .skills_title {
+        margin: 0;
+    }
+    .skillItem_container {
+        position: relative;
+        max-width: 100%;
+        padding: 10px 0;
+    }
+    .skillItem_icon {
+        padding-top: 0;
+        width: 60px;
+        position: absolute;
+    }
+    .skillItem_img {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+    .skillItem_description {
+        flex-direction: row;
+        padding-left: 0;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        max-width: 100%;
+    }
+    .skillItem_title {
+        margin-left: 60px;
+        line-height: 40px;
+    }
+    .skillItem_scale {
+        margin: 0 0 0 20px;
+        align-items: center;
+    }
+    .skillItem_text {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-top: 5px;
+    }
+    .skills_btnToTop {
+        bottom: 130px;
+    }
+}
+
+@media (max-width: 600px) and (orientation: landscape) {
+    .app_backTitle {
+        font-size: 150px;
+        letter-spacing: -18px;
+    }
+    .sideInfo_container {
+        grid-template-columns: 100px 190px;
+        grid-template-rows: 60px;
+    }
+    .sideInfo_name {
+        font-size: 26px;
+        line-height: 28px;
+    }
+    .skills_findWrap {
+        width: 508px;
+    }
+    .skills_findInput {
+        font-size: 14px;
+        padding: 8px 40px 8px 10px;
+    }
+    .skills_findWrap .skills_img {
+        bottom: 4px;
+    }
+    .skills_btnToTop {
+        bottom: 90px;
+        right: 20px;
     }
 }

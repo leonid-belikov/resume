@@ -1,6 +1,7 @@
 .container {
     display: flex;
-    padding: 15px 30px;
+    padding: 15px 0;
+    max-width: 670px;
 }
 
 .anchor {
@@ -25,7 +26,6 @@
 }
 
 .description {
-    max-width: 550px;
     color: #f2f2f2;
     padding-left: 40px;
     display: flex;

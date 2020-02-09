@@ -17,10 +17,10 @@
 .findWrap {
     display: flex;
     justify-content: flex-end;
-    width: 830px;
+    width: 750px;
     position: absolute;
     left: 0;
-    top: 50px;
+    top: 95px;
 }
 
 .find {
@@ -69,6 +69,7 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 120px;
+    max-width: 670px;
 }
 
 .title {
@@ -76,7 +77,7 @@
     color: #434e79;
     max-width: 480px;
     border-bottom: 1px solid #434e79;
-    margin: 15px 0 25px 35px;
+    margin: 20px 0;
     font-size: 16px;
     line-height: 40px;
 }

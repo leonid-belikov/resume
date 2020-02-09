@@ -24,10 +24,10 @@ class SideInfo extends React.Component {
 		});
 
         return (
-            <div className={css.container}>
-                <div className={css.nameWrap}>
+            <div className={css.container + ' sideInfo_container'}>
+                <div className={css.nameWrap + ' sideInfo_nameWrap'}>
                     <NavLink className={css.link} to="/profile">
-                        <div className={css.name}>Леонид Беликов</div>
+                        <div className={css.name + ' sideInfo_name'}>Леонид Беликов</div>
                     </NavLink>
                 </div>
                 <div className={css.avatar}>
@@ -37,7 +37,7 @@ class SideInfo extends React.Component {
                         borderVisible={false}
                     />
                 </div>
-                <div className={css.contacts}>
+                <div className={css.contacts + ' sideInfo_contacts'}>
                     {contacts}
                 </div>
             </div>
