@@ -161,8 +161,8 @@ const state = {
 				stages: [
 					{
 						title: 'Прошел обучение на курсах профессиональной переподготовки в университете ИТМО',
-						period: 'С февраля по июнь',
-						skills: ['git', 'js', 'php', 'mysql'],
+						period: 'С февраля',
+						skills: ['git', 'js'],
 						description: [
 							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
 							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']
@@ -170,7 +170,7 @@ const state = {
 					{
 						title: 'Добавить описание',
 						period: 'Добавить период',
-						skills: ['gulp', 'bootstrap', 'sass'],
+						skills: ['gulp', 'sass'],
 						description: [
 							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
 							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']

@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import {HashLink} from "react-router-hash-link";
 import css from './YearItem.module.css';
 
 class YearItem extends React.Component {
@@ -11,21 +12,21 @@ class YearItem extends React.Component {
 
     render() {
 
-        const activeStyle = this.props.selected ? css.selected : '';
+        const activeStyle = this.props.selected ? `${css.selected} yearItem_selected` : '';
         const year = this.props.year;
 
         return (
-            <a href="#expTop"
-                style={{display: 'block', width: this.props.width}}>
+            <HashLink to="#expTop"
+                className={css.link + ' yearItem_link ' + activeStyle}>
                 <div
                     year={year}
-                    className={css.container + ' ' + activeStyle}
+                    className={css.container + ' yearItem_container'}
                     onClick={this.onChangeSelectedYear.bind(this)}>
-                    <div className={css.yearNum}>
+                    <div className={css.yearNum + ' yearItem_yearNum'}>
                         {year}
                     </div>
                 </div>
-            </a>
+            </HashLink>
         )
     }
 

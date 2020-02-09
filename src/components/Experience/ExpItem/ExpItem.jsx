@@ -16,8 +16,8 @@ const ExpItem = (props) => {
     });
 
     return (
-        <div className={css.container}>
-            <div className={css.title}>
+        <div className={css.container + ' expItem_container'}>
+            <div className={css.title + ' expItem_title'}>
                 {props.title}
             </div>
             <div className={css.subtitle}>
@@ -31,7 +31,7 @@ const ExpItem = (props) => {
                     {props.period}
                 </div>
             </div>
-            <div className={css.description}>
+            <div className={css.description + ' expItem_description'}>
                 {description}
             </div>
         </div>

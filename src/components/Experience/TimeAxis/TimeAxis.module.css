@@ -1,9 +1,7 @@
 .container {
-    height: 40px;
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding-bottom: 10px;
-    box-shadow: 0 12px 16px 10px #b0bbef;
     position: relative;
+    padding-bottom: 10px;
 }

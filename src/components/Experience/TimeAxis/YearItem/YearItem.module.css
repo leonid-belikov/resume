@@ -12,14 +12,19 @@
     background: rgba(255, 255, 255, 0.3);
 }
 
+.link {
+    display: block;
+    width: 24%;
+}
+
 .yearNum {
-    font-size: 60px;
+    font-size: 56px;
     display: flex;
     align-items: flex-start;
-    line-height: 34px;
+    line-height: 30px;
     color: #b8b8f4;
 }
 
-.selected {
+.selected .container {
     background: rgba(255, 255, 255, 0.3);
 }

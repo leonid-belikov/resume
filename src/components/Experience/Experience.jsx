@@ -49,14 +49,14 @@ class Experience extends React.Component {
             });
 
             return (
-                <div className={css.container}>
-                    <div className={css.sideInfo}>
+                <div className={css.container + ' experience_container'}>
+                    <div className={css.sideInfo + ' sideInfo'}>
                         <SideInfo/>
                     </div>
-                    <div className={css.mainInfo}>
+                    <div className={css.mainInfo + ' experience_mainInfo'}>
                         <TimeAxis/>
                         <div className={css.expItemsWrap}>
-                            <div className={css.expItems} id="expTop">
+                            <div className={css.expItems + ' experience_expItems'} id="expTop">
                                 {expItems}
                             </div>
                         </div>

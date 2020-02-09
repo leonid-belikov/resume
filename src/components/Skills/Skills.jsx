@@ -70,7 +70,7 @@ class Skills extends React.Component {
 
         return (
             <div className={css.container + ' skills_container'}>
-                <div className={css.sideInfo + ' skills_sideInfo'}>
+                <div className={css.sideInfo + ' sideInfo'}>
                     <SideInfo/>
                 </div>
                 <div className={css.mainInfo + ' skills_mainInfo'}>
