@@ -34,21 +34,17 @@ class Projects extends React.Component {
         const description = projects[selectedProject].description;
 
         return (
-            <div className={css.container}>
-                <div className={css.covers}>
+            <div className={css.container + ' projects_container'}>
+                <div className={css.covers + ' projects_covers'}>
                     <div
-                        className={css.arrowBox + ' ' + css.arrowToPrev}
+                        className={css.arrowBox + ' projects_arrowToPrev ' + css.arrowToPrev}
                         data-idx={this.getPrev(selectedProject)}
                         onClick={this.onChangeSelectedProject.bind(this)}>
-                        <div className={css.arrow}></div>
+                        <div className={css.arrow + ' projects_arrow'}></div>
                     </div>
-                    <div className={`current ${css.cover}`}>
-                        <img
-                            className={css.main}
-                            src={currentImg}
-                            alt=""
-                        />
-                        <div className={css.links}>
+                    <div className={`current ${css.cover} projects_cover`}>
+                        <img className={css.main + ' main'} src={currentImg} alt=""/>
+                        <div className={css.links + ' projects_links'}>
                             {link && <a href={link} className={css.link} target='_blank' rel="noopener noreferrer" title='Перейти на сайт'>
                                 <img src="/icons/link.png" alt="" width={24}/>
                             </a>}
@@ -57,16 +53,16 @@ class Projects extends React.Component {
                             </a>
                         </div>
                     </div>
-                    <div className={css.arrowBox + ' ' + css.arrowToNext}
+                    <div className={css.arrowBox + ' projects_arrowToNext ' + css.arrowToNext}
                         data-idx={this.getNext(selectedProject)}
                         onClick={this.onChangeSelectedProject.bind(this)}>
-                        <div className={css.arrow}></div>
+                        <div className={css.arrow + ' projects_arrow'}></div>
                     </div>
                 </div>
-                <div className={css.title}>
+                <div className={css.title + ' projects_title'}>
                     {title}
                 </div>
-                <div className={css.description}>
+                <div className={css.description + ' projects_description'}>
                     {description}
                 </div>
             </div>

@@ -12,11 +12,11 @@ class Portfolio extends React.Component {
 
     render() {
         return (
-            <div className={css.container}>
+            <div className={css.container + ' portfolio_container'}>
                 <div className={css.sideInfo + ' sideInfo'}>
                     <SideInfo/>
                 </div>
-                <div className={css.mainInfo}>
+                <div className={css.mainInfo + ' portfolio_mainInfo'}>
                     <Projects/>
                 </div>
             </div>

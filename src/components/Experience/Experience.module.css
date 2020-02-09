@@ -9,7 +9,7 @@
 
 .mainInfo {
     flex-grow: 1;
-    padding: 102px 25px 0 110px;
+    padding: 102px 25px 0 60px;
     overflow: auto;
     display: flex;
     flex-direction: column;

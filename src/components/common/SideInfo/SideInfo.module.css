@@ -6,6 +6,7 @@
         'a'
         'c';
     grid-template-rows: 140px 300px;
+    grid-template-columns: 320px;
 }
 
 .nameWrap {
