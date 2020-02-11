@@ -39,7 +39,7 @@ class Profile extends React.Component {
 			<div className={css.container + ' profile_container'}>
 				<div className={css.avatar + ' profile_avatar'}>
 					<Avatar
-						img='/img/avatar_3_2.png'
+						img='/img/avatar.png'
 						borderVisible={true}
 					/>
 				</div>

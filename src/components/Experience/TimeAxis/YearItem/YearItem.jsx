@@ -16,7 +16,9 @@ class YearItem extends React.Component {
         const year = this.props.year;
 
         return (
-            <HashLink to="#expTop"
+            <HashLink  to={{
+                pathname: '/experience',
+                hash: '#expTop'}}
                 className={css.link + ' yearItem_link ' + activeStyle}>
                 <div
                     year={year}

@@ -430,7 +430,7 @@
         font-size: 22px;
         font-weight: 200;
     }
-    .yearItem_selected {
+    .yearItem_selected, .yearItem_selected .yearItem_container {
         background: none;
     }
     .yearItem_selected .yearItem_yearNum {

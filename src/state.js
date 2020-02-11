@@ -8,99 +8,78 @@ const state = {
 			category: 'frontend',
 			img: '/icons/html5.png',
 			level: 5,
-			descriptionText: 'При верстке применяю общепринятые правила оформления HTML-кода, а также семантические элементы HTML5'
+			descriptionText: 'Верстка по общепринятым правилам оформления HTML-кода. Применение семантических элементов HTML5, data-атрибутов.'
 		},
 		{
 			name: 'css',
 			category: 'frontend',
 			img: '/icons/css3.png',
 			level: 5,
-			descriptionText: 'Стилизирую, трансформирую, создаю анимацию элементов DOM с помощью CSS-свойств, применяю методологию БЭМ'
+			descriptionText: 'Стилизация внешнего вида и трансформаций элементов DOM, разметка с помощью flex и grid, а также библиотеки bootstrap-grid. Создание анимации и адаптивности разметки под устройства с различными разрешениями. Применение методологии БЭМ.'
 		},
 		{
 			name: 'sass',
 			category: 'frontend',
 			img: '/icons/sass.png',
 			level: 4,
-			descriptionText: 'Оптимизирую написание стилей с помощью вложенности, фрагментирования и импорта кода, использования переменных'
+			descriptionText: 'Оптимизация написания стилей с помощью вложенности, фрагментирования и импорта кода, использования переменных.'
 		},
-		// {
-		// 	name: 'bootstrap',
-		// 	category: 'frontend',
-		// 	img: '/icons/bootstrap.png',
-		// 	level: 3,
-		// 	descriptionText: 'Использую сетку из библиотеки bootstrap-grid для оптимизации разметки'
-		// },
 		{
 			name: 'js',
 			category: 'frontend',
 			img: '/icons/js.png',
 			level: 5,
-			descriptionText: 'Организую код в виде отдельно подключаемых JS-файлов или модулей на основе require.js, описываю взаимодейтвие с элементами DOM на чистом JS или с помощью JQuery, для запросов на сервер использую XHR, fetch, применяю синтаксис и инструменты ES6+, архитектуру MV*'
+			descriptionText: 'Создание клиентской логики приложения, обмен данных с сервером через XHR, fetch, манипулирование элементами DOM на нативном JS. Модульная организация кода на основе require.js. Применение парадигмы ООП, архитектур MV*. Использование инструментов ES6+. Чтение чужого кода, в том числе не слишком читаемого.'
 		},
 		{
 			name: 'react',
 			category: 'frontend',
 			img: '/icons/react.png',
 			level: 4,
-			descriptionText: 'Создаю полноценные SPA c применением функциональных и классовых компонентов, роутинга, манипулировать состоянием классовых компонентов на разных этапах жизненного цикла'
+			descriptionText: 'Создание полноценных SPA c применением функциональных и классовых компонентов, настройка роутинга. Манипулирование состоянием классовых компонентов на разных этапах жизненного цикла.'
 		},
 		{
 			name: 'redux',
 			category: 'frontend',
 			img: '/icons/redux.png',
 			level: 4,
-			descriptionText: 'Оптимизирую работу с хранилищем данных о состоянии приложения и обработчиками событий с помощью mapStateToProps(), mapDispatchToProps()'
+			descriptionText: 'Оптимизация работы с данными о состоянии react-приложения с помощью создания единого хранилища данных, описания action-объектов и функций-редюсеров для получения нового состояния.'
 		},
 		{
 			name: 'git',
 			category: 'command',
 			img: '/icons/git.png',
 			level: 5,
-			descriptionText: 'Настраиваю конфигурацию, создаю алиасы, выполняю подключение и синхронизацию с удаленным репозиторием, перебазирование веток, копирование, слияние, откат коммитов, умею работать в команде по принципу Git-flow'
+			descriptionText: 'Настройка конфигурации, создание алиасов. Подключение и синхронизация с удаленным репозиторием. Создание, слияние, перебазирование веток. Создание, копирование, слияние, откат коммитов. Работа в команде по принципу Git-flow.'
 		},
 		{
 			name: 'gulp',
 			category: 'other',
 			img: '/icons/gulp.png',
-			level: 3,
-			descriptionText: 'Применяю для автоматической компиляции SASS в CSS, минификации HTML, CSS, JS-файлов, сжатия изображений, копирования и перемещения файлов и директорий'
+			level: 4,
+			descriptionText: 'Автоматическая компиляция SASS в CSS, минификация HTML, CSS, JS-файлов, сжатие изображений, копирование и перемещение файлов и директорий.'
 		},
 		{
 			name: 'python',
 			category: 'backend',
 			img: '/icons/python.png',
 			level: 4,
-			descriptionText: 'Имею опыт в написании логики серверной части web-приложений (обработке данных, получаемых от клиента, отправке запросов к БД, отправке данных, полученных из БД, на клиент) с применением функционального и объектно-ориентированного стиля'
+			descriptionText: 'Написание методов серверной логики web-приложений с применением функционального и объектно-ориентированного стиля.'
 		},
 		{
 			name: 'postgresql',
 			category: 'backend',
 			img: '/icons/postgresql.png',
 			level: 3,
-			descriptionText: 'Имею опыт составления и оптимизации запросов к БД для чтения, создания и обновления записей с использованием JOIN, UNION, вложенных запросов, EXIST, CASE и др.'
+			descriptionText: 'Составление и оптимизация запросов к БД для чтения, создания и обновления записей. Использование JOIN, UNION, вложенных запросов, EXIST, CASE и др.'
 		},
 		{
 			name: 'django',
 			category: 'other',
 			img: '/icons/django.png',
 			level: 3,
-			descriptionText: 'Lorem django ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
+			descriptionText: 'Написание клиентской и серверной логики, обмен данными с БД, серверная верстка.'
 		},
-		// {
-		// 	name: 'php',
-		// 	category: 'backend',
-		// 	img: '/icons/php.png',
-		// 	level: 3,
-		// 	descriptionText: 'Lorem PHP ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
-		// },
-		// {
-		// 	name: 'mysql',
-		// 	category: 'backend',
-		// 	img: '/icons/mysql.png',
-		// 	level: 3,
-		// 	descriptionText: 'Lorem MySQL ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto aspernatur at autem beatae blanditiis, dolorem eligendi et impedit iure molestiae nulla numquam, quidem soluta ullam, veniam veritatis voluptatem voluptatibus'
-		// },
 	],
 	contacts: [
 		{
@@ -150,8 +129,9 @@ const state = {
 						period: 'С ноября',
 						skills: ['html', 'css'],
 						description: [
-							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
-							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.'
+							'Меня интересовало, как устроены сайты c тех пор, как у меня появился первый компьютер в далеком 2005 году. Но по роду деятельности мне не приходилось работать с Web-технологиями, а чтобы изучить самостоятельно - не хватало литературы и самодисциплины.',
+							'Спустя годы, дремавший интерес вновь пробудился, и, благодаря современной доступности информации, я начал разбираться в верстке и каскадных таблицах стилей, которые все больше затягивали меня по мере изучения.',
+							'Сверстав определенное количество макетов (один из них до сих пор храню на Github в репозитории starnight), я понял, что хочу в этом развиваться дальше.'
 						]
 					},
 				]
@@ -160,28 +140,31 @@ const state = {
 				year: 2018,
 				stages: [
 					{
-						title: 'Прошел обучение на курсах профессиональной переподготовки в университете ИТМО',
+						title: 'Прошел обучение на курсах профессиональной переподготовки в университете ИТМО в СПб',
 						period: 'С февраля',
 						skills: ['git', 'js'],
 						description: [
-							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
-							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']
+							'Решив освоить web-разработку целиком, я поступил на курсы профессиональной переподготовки по специальности "web-разработчик".',
+							'После защиты дипломной работы, получил базовые знания JavaScript, PHP, MySQL, Git, Gulp, представление об обмене данными между клентом и сервером, а также диплом, подтверждающий все вышеперечисленное.',
+							'Тогда же начал склоняться на сторону frontend.'
+						]
 					},
 					{
-						title: 'Добавить описание',
-						period: 'Добавить период',
+						title: 'Самостоятельно расширил знания в Gulp и Sass',
+						period: 'C августа',
 						skills: ['gulp', 'sass'],
 						description: [
-							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
-							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']
+							'Чтобы оптимизировать процесс разработки изучил таск-менеджер Gulp более углубленно, а также модульную организацию JS-кода с помощью require.js и работу с препроцессором Sass.',
+							'Научился автоматизировать процессы сборки JS-модулей, минификации файлов, сжатия изображений.']
 					},
 					{
 						title: 'Ушел с прежней работы в IT-компанию на должность frontend-разработчика',
 						period: 'С октября',
 						skills: [],
 						description: [
-							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
-							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']
+							'Разрываться между работой и новым хобби стало слишком тяжело, и я принял решение о смене своей профессии.',
+							'По результатам выполнения тестового задания и прохождения собеседования был принят на должность инженера-программиста в крупную компанию, выпускающую онлайн-систему деловых коммуникаций.',
+							'В команде разработчиков отвечал за поддержку и обновление клиентской части своего участка приложения. Расширил знания в JavaScript, HTML, CSS, Git, разработке приложений на базе JS-модулей и require.js, динамическом обновлении верстки с помощью шаблонизатора.',]
 					},
 				]
 			},
@@ -193,24 +176,26 @@ const state = {
 						period: 'С апреля',
 						skills: ['python', 'postgresql'],
 						description: [
-							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
-							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']
+							'Параллельно работе с frontend изучил Python и PostgreSQL, чтобы помогать ответственному за backend, а после его ухода стал отвечать за поддержку и клентской, и серверной логики участка.',
+							'В результате, отдавая предпочтение frontend, способен при необходимости написать несколько строк для backend.',
+							'Все результаты моей работы, разумеется, принадлежат работодателю.'
+						]
 					},
 					{
 						title: 'Под впечатлением от Python самостоятельно изучил основы django',
 						period: 'С мая',
 						skills: ['django'],
 						description: [
-							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
-							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']
+							'Для расширения знаний в Python и для возможности самостоятельной разработки приложений, осуществляющих хранение данных в БД, изучил основы django.',
+							'Знания django применил для разработки приложения по учету личных финансов, которое было разработано до уровня базовой функциональности: создание, сохранение, редактирование, фильтрация, удаление записей. Дальнейшая разработка приостановлена.']
 					},
 					{
 						title: 'Самостоятельно изучил React и Redux для погружения во frontend',
 						period: 'С ноября',
 						skills: ['react', 'redux'],
 						description: [
-							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
-							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']
+							'Ознакомившись с концепцией SPA, изучил библиотеки React и Redux.',
+							'Окончательно убедился в пристрастии к frontend-разработке и желании развиваться в дальнейшем по этому направлению.']
 					},
 				]
 			},
@@ -222,8 +207,8 @@ const state = {
 						period: 'С января',
 						skills: [],
 						description: [
-							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos enim facere id labore maiores ullam.',
-							'Accusantium alias assumenda aut autem commodi cupiditate earum, eius eum exercitationem, fuga iste laborum libero magnam minus rem sint tempore ullam unde vel voluptate.']
+							'Да-да, этот. Отрабатывал навыки работы с React и Redux, создавая данный сайт-резюме.',
+							'В дальнейших планах расширение знаний в уже изученных технологиях, а также изучение новых, таких как TypeScript, View.js, Angular.']
 					},
 				]
 			},
@@ -233,46 +218,46 @@ const state = {
 	portfolioPage: {
 		projects: [
 			{
-				title: 'Лэндинг для автошколы',
+				title: 'Шаблон лэндинга для автошколы',
 				img: './img/portfolio/wroom_1.png',
 				src: 'https://github.com/leonidleonid/wrooom',
 				link: null,
-				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
+				description: 'Выполнен в образовательных целях. JS-код разбит на модули с помощью require.js. Эффекты и трансформации элементов DOM на нативном JS.'
 			},
 			{
 				title: 'Сайт-резюме',
 				img: './img/portfolio/resume.png',
 				src: 'https://github.com/leonidleonid/resume',
 				link: '/',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
+				description: 'Реализован в виде SPA на React/Redux. Для демонстрации возможностей изменения данных о состоянии на сайте доступна фильтрация и поиск записей.'
 			},
 			{
 				title: 'Приложение для учета личных финансов',
 				img: './img/portfolio/fire_app_1.png',
 				src: 'https://github.com/leonidleonid/fire_app',
 				link: null,
-				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
+				description: 'Разработано на django, реализован только базовый функционал. Доступно создание, редактирование, удаление записей о доходах/расходах, подсчет сумм за день, месяц.'
 			},
 			{
-				title: 'Прототип "Интернет-магазин"',
+				title: 'Тестовое задание "Интернет-магазин"',
 				img: './img/portfolio/online_store_1.png',
 				src: 'https://github.com/leonidleonid/onlinestore',
 				link: 'https://leonidleonid.github.io/onlinestore',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
+				description: 'Выполнено в образовательных целях. Доступен выбор товаров из каталога, автоматическое формирование корзины покупок с возможностью ее корректировки. Данные о заказе сохраняются в локал сторадж и доступны после перезагрузке страницы. JS-код организован согласно архитектуре MVP.'
 			},
 			{
-				title: 'Прототип "Текстовые блоки"',
+				title: 'Тестовое задание "Текстовые блоки"',
 				img: './img/portfolio/blocks_1.png',
 				src: 'https://github.com/leonidleonid/blocks',
 				link: 'https://leonidleonid.github.io/blocks',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
+				description: 'Выполнено в образовательных целях. Доступно добавление случайного блока, изменение его состояния, удаление. При этом происходит подсчет статистики. JS-код организован согласно архитектуре MVP.'
 			},
 			{
-				title: 'Прототип "Галерея событий"',
+				title: 'Тестовое задание "Галерея событий"',
 				img: './img/portfolio/gallery.png',
 				src: 'https://github.com/leonidleonid/gallery',
 				link: 'https://leonidleonid.github.io/gallery',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore esse et expedita maxime numquam pariatur quas tempora vitae, voluptates! Consequatur culpa cum earum hic, nihil odio officiis quaerat vero!'
+				description: 'Выполнено в образовательных целях. Доступна сортировка и фильтрация записей, добавление в Избранное. В JS-коде применена парадигма ООП.'
 			},
 		],
 		selectedProject: 0

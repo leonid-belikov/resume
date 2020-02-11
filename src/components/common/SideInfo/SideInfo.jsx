@@ -33,7 +33,7 @@ class SideInfo extends React.Component {
                 <div className={css.avatar}>
                     <Avatar
                         small={true}
-                        img='/img/avatar_3_mini.png'
+                        img='/img/avatar_mini.png'
                         borderVisible={false}
                     />
                 </div>
